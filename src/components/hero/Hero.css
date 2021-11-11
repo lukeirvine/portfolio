@@ -1,0 +1,72 @@
+.hero-container, .hero-img {
+    width: 100vw;
+    height: 220px;
+}
+
+.hero-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 3px #4d4d4d;
+}
+
+.hero-img {
+    object-fit: cover;
+    opacity: 0.7
+}
+
+/* Screen size specs */
+
+@media only screen and (max-width: 576px) {
+    .hero-title {
+        font-size: 40px;
+    }
+}
+
+
+@media only screen and (min-width: 576px) {
+    .hero-title {
+        font-size: 40px;
+    }
+}
+
+
+@media only screen and (min-width: 767px) {
+    .hero-title {
+        font-size: 50px;
+    }
+
+    .hero-container, .hero-img {
+        height: 300px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .hero-title {
+        font-size: 60px;
+    }
+
+    .hero-container, .hero-img {
+        height: 350px;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .hero-title {
+        font-size: 75px;
+    }
+    .hero-subtitle {
+        font-size: 20px;
+    }
+}

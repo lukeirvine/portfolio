@@ -1,24 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Homepage from './components/pages/homepage/Homepage';
+import Error from "./components/pages/error/Error";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter basename={process.env.PUBLIC_URL} onUpdate={() => window.scrollTo(0,0)}>
+      <div>
+          {/* <ScrollToTop/> */}
+          <Switch>
+              <Route path="/" component={Homepage} exact/>
+              <Route render={(props) => <Error {...props}/>}/>
+          </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
