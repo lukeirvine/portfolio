@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './../../nav-bar/NavBar';
+import { Button } from 'react-bootstrap';
 import './Homepage.css'
 
 const Homepage = () => {
@@ -27,18 +28,26 @@ const Homepage = () => {
                         with engaging MicroSaaS web apps, mostly using React.js and Firebase.
                     </p>
                     <div className="homepage-link-container">
-                        <button className="homepage-link-btn">
+                        <Button 
+                            variant="light" 
+                            className="homepage-link-btn"
+                        >
                             <i className='bi-tools' />
                             <span className="homepage-link-btn-text">Apps</span>
-                        </button>
-                        <button className="homepage-link-btn">
+                        </Button>
+                        <Button 
+                            variant="light" 
+                            className="homepage-link-btn" 
+                            href="https://github.com/lukeirvine" 
+                            target="_blank"
+                        >
                             <i className='bi-github' />
                             <span className="homepage-link-btn-text">Code</span>
-                        </button>
-                        {/* <button className="homepage-link-btn">
+                        </Button>
+                        {/* <Button variant="light" className="homepage-link-btn">
                             <i className='bi-youtube' />
                             <span className="homepage-link-btn-text">Music</span>
-                        </button> */}
+                        </Button> */}
                     </div>
                 </div>
             </div>
