@@ -7,7 +7,7 @@ import Error from "./components/pages/error/Error";
 
 const App = () => {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
           <Switch>
               <Route path="/" component={Homepage} exact/>
               <Route path="/apps" component={Portfolio} exact/>
