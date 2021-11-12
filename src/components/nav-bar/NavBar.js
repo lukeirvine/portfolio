@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-                <Navbar.Brand href="/">
+                <Navbar.Brand as={ Link } to="/">
                     <i className="bi-code-square nav-icon" /> Luke Irvine
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
