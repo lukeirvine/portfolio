@@ -7,15 +7,12 @@ import Error from "./components/pages/error/Error";
 
 const App = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL} onUpdate={() => window.scrollTo(0,0)}>
-      <div>
-          {/* <ScrollToTop/> */}
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Switch>
               <Route path="/" component={Homepage} exact/>
               <Route path="/apps" component={Portfolio} exact/>
               <Route render={(props) => <Error {...props}/>}/>
           </Switch>
-      </div>
     </BrowserRouter>
   );
 }
