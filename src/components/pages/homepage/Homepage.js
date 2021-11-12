@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from './../../nav-bar/NavBar';
 import { Button } from 'react-bootstrap';
-import Footer from './../../footer/Footer';
+import { Link } from 'react-router-dom';
 import './Homepage.css'
 
 const Homepage = () => {
@@ -32,7 +32,8 @@ const Homepage = () => {
                         <Button 
                             variant="light" 
                             className="homepage-link-btn"
-                            href="/apps"
+                            as={ Link }
+                            to="/apps"
                         >
                             <i className='bi-tools' />
                             <span className="homepage-link-btn-text">Apps</span>
