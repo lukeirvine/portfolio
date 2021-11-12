@@ -12,7 +12,8 @@ NC='\033[0m' # No Color
 #     exit 1;
 # fi
 
-read -p "${YELLOW}Are you ready to deploy to production? (Y/n): ${NC}" answer
+echo -e "${YELLOW}Are you ready to deploy to production? ${NC}"
+read -p "(Y/n): " answer
 if [ $answer == "Y" ]; then
     git checkout master
     git merge dev -m "merging dev"
