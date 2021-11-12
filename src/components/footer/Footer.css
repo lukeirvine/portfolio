@@ -1,7 +1,6 @@
 .footer-container {
     /* border-top-style: solid; */
     border-width: 2px;
-    box-shadow: 0px 0px 10px rgb(189, 189, 189);
     border-color: rgb(221, 221, 221);
     min-height: 40px;
     display: flex;
@@ -31,7 +30,7 @@
     justify-content: flex-start;
 }
 
-.bi-instagram {
+.footer-icon {
     color: gray;
     margin-right: 5px;
 }

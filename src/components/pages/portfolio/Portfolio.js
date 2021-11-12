@@ -26,8 +26,8 @@ const Portfolio = () => {
                                     GoalTop was born out of having too much to do and not enough
                                     motivation to do it. I figured if I could get my goals and intimidating
                                     countdown timers where I see them everyday, I would be more productive.
-                                    It was either this or buy a whiteboard to go above my desk, and I'm
-                                    just too cheap for that.
+                                    It was either this or buy a whiteboard to go above my desk. I guess I'm 
+                                    too cheap for that.
                                 </p>
                                 <p className="app-par">
                                     This is my first app I'm going to market publicly. It is currently in
@@ -131,7 +131,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </>
     )

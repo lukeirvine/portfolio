@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from './../../nav-bar/NavBar';
 import { Button } from 'react-bootstrap';
+import Footer from './../../footer/Footer';
 import './Homepage.css'
 
 const Homepage = () => {
@@ -60,6 +61,7 @@ const Homepage = () => {
                         </Button> */}
                     </div>
                 </div>
+                {/* <Footer className="homepage-footer" /> */}
             </div>
         </>
     )

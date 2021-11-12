@@ -2,6 +2,10 @@
     padding: 10px;
 }
 
+.nav-icon {
+    margin-right: 2px;
+}
+
 /* Screen size specs */
 
 @media only screen and (max-width: 576px) {
