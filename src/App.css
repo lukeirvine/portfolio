@@ -2,6 +2,15 @@
   font-weight: bold;
 }
 
+.hero-img {
+  width: 100vw;
+  height: 150px;
+  object-fit: cover;
+  top: 0px;
+  z-index: -1;
+}
+
+
 /* Screen size specs */
 
 @media only screen and (max-width: 576px) {
@@ -13,7 +22,9 @@
 
 
 @media only screen and (min-width: 767px) {
-  
+  .hero-img {
+    height: 250px;
+  }
 }
 
 

@@ -8,7 +8,7 @@ const Homepage = () => {
         <>
             <NavBar />
             <div className="homepage-page">
-                <img className="homepage-hero-img" alt="" src="https://i.imgur.com/9hZQkUs.jpg" />
+                <img className="hero-img homepage-hero" alt="" src="https://i.imgur.com/9hZQkUs.jpg" />
                 <div className="homepage-content">
                     <div className="homepage-avatar-wrapper">
                         <img
@@ -31,6 +31,7 @@ const Homepage = () => {
                         <Button 
                             variant="light" 
                             className="homepage-link-btn"
+                            href="/apps"
                         >
                             <i className='bi-tools' />
                             <span className="homepage-link-btn-text">Apps</span>
@@ -43,6 +44,15 @@ const Homepage = () => {
                         >
                             <i className='bi-github' />
                             <span className="homepage-link-btn-text">Code</span>
+                        </Button>
+                        <Button 
+                            variant="light" 
+                            className="homepage-link-btn" 
+                            href="https://www.linkedin.com/in/luke-irvine-73b136186/" 
+                            target="_blank"
+                        >
+                            <i className='bi-linkedin' />
+                            <span className="homepage-link-btn-text">Linkedin</span>
                         </Button>
                         {/* <Button variant="light" className="homepage-link-btn">
                             <i className='bi-youtube' />

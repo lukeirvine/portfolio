@@ -1,13 +1,12 @@
 .homepage-page {
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
 }
 
-.homepage-hero-img {
+.homepage-hero {
     display: none;
 }
 
@@ -53,6 +52,7 @@
 
 .homepage-tagline {
     padding: 20px;
+    padding-bottom: 0px;
 }
 
 .homepage-link-container {
@@ -93,30 +93,22 @@
 
 
 @media only screen and (min-width: 767px) {
-    .homepage-content {
+    .homepage-hero {
+        object-position: 50% 0%;
+        display: block;
     }
 
     .homepage-content {
-        width: 500px;
+        width: 600px;
         margin-top: 0px;
         position: relative;
         top: -75px;
-    }
-
-    .homepage-hero-img {
-        display: block;
-        width: 100vw;
-        height: 250px;
-        object-fit: cover;
-        top: 0px;
-        z-index: -1;
-        object-position: 50% 0%;
     }
 }
 
 
 @media only screen and (min-width: 992px) {
-    .homepage-hero-img {
+    .homepage-hero {
         object-position: 50% 10%;
     }
 }

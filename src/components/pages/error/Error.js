@@ -104,7 +104,7 @@ class Error extends Component {
 
     render() {
         if (this.state.redirect) {
-            return <Redirect to='/dashboard' />;
+            return <Redirect to='/' />;
         }
         var message = "It looks like one of the developers fell asleep"
         var code = "404"

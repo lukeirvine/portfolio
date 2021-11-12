@@ -1,0 +1,151 @@
+.apps-page {
+    position: absolute;
+}
+
+.apps-hero {
+    filter: blur(1px);
+    box-shadow: 0px 0px 0px 2px black;
+}
+
+.apps-title {
+    position: absolute;
+    width: 100vw;
+    top: 50px;
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.app-name-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.bi-puzzle-fill {
+    font-size: 50px;
+    margin-bottom: 0px;
+    transform: rotate(90deg);
+    color: rgb(63, 83, 92);
+}
+
+.app-icon {
+    color: rgb(63, 83, 92);
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.app-name {
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.app-dates {
+    color: gray;
+    margin-left: 10px;
+}
+
+.app-demo-img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 15px rgb(73, 73, 73);
+}
+
+.app-description {
+    margin-top: 20px;
+}
+
+.app-par {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 25px;
+}
+
+.app-list-title {
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+.app-list {
+    padding-right: 15px;
+}
+
+/* Screen size specs */
+
+@media only screen and (max-width: 576px) {
+}
+
+
+@media only screen and (min-width: 576px) {
+}
+
+
+@media only screen and (min-width: 767px) {
+    .apps-title {
+        top: 85px;
+        font-size: 60px;
+    }
+
+    .apps-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .app-container {
+        width: 45%;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .apps-content {
+        display: block;
+    }
+
+    .app-container {
+        width: 100%;
+        padding: 30px;
+        padding-bottom: 50px;
+    }
+
+    .app-content {
+        display: flex;
+    }
+
+    .app-icon, .app-name {
+        font-size: 50px;
+    }
+
+    .app-demo-img {
+        width: 40%;
+    }
+
+    .app-description {
+        margin-top: 0px;
+        padding-left: 20px;
+    }
+
+    .app-dark {
+        color: rgb(230, 230, 230);
+    }
+
+    #smallgroups-container, #meal-container {
+        background: linear-gradient(135deg, rgb(44, 41, 85), rgb(17, 14, 31));
+    }
+
+    .app-dark .app-icon {
+        color: white;
+    }
+
+    .app-dark .app-demo-img {
+        box-shadow: 0px 0px 15px black;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+}
