@@ -1,6 +1,7 @@
 .homepage-page {
     width: 100vw;
     position: absolute;
+    min-height: 100vh;
 }
 
 .homepage-hero {
