@@ -47,7 +47,7 @@ const Homepage = () => {
                             <i className='bi-github' />
                             <span className="homepage-link-btn-text">Code</span>
                         </Button>
-                        <Button 
+                        {/* <Button 
                             variant="light" 
                             className="homepage-link-btn" 
                             href="https://www.linkedin.com/in/luke-irvine-73b136186/" 
@@ -55,7 +55,7 @@ const Homepage = () => {
                         >
                             <i className='bi-linkedin' />
                             <span className="homepage-link-btn-text">Linkedin</span>
-                        </Button>
+                        </Button> */}
                         {/* <Button variant="light" className="homepage-link-btn">
                             <i className='bi-youtube' />
                             <span className="homepage-link-btn-text">Music</span>
