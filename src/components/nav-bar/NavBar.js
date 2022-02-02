@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Navbar.Brand>
                     <Link className="brand-link" to="/"><i className="bi-code-square nav-icon" /> Luke Irvine</Link>
                 </Navbar.Brand>

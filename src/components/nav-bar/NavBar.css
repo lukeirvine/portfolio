@@ -7,12 +7,16 @@
 }
 
 .brand-link {
-    color: black;
+    color: rgb(231, 231, 231);
 }
 
 .brand-link:hover {
-    color: black;
+    color: rgb(192, 192, 192);
     text-decoration: none;
+}
+
+.brand-link, .brand-link:hover {
+    transition-duration: 0.3s;
 }
 
 /* Screen size specs */

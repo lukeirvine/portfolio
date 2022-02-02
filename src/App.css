@@ -1,9 +1,10 @@
 body {
-  background-color: white;
+  background-color: rgb(43, 43, 43);
 }
 
 .page-title {
   font-weight: bold;
+  color: white;
 }
 
 .hero-img {
