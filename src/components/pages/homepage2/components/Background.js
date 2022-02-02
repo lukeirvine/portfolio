@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { imgs } from '../../../../resources/images';
-import { shuffleArray } from '../../../../resources/functions';
+import { shuffleArray, getRandomInt } from '../../../../resources/functions';
 import './Background.css';
 
 const colors = [
@@ -16,11 +16,18 @@ Object.values(imgs).forEach(category => {
 // images = shuffleArray(images);
 
 const Background = () => {
-    const [flipped, setFlipped] = useState(false);
+    let flippedObj = {};
+    for (let i = 1; i <= 18; i++) {
+        flippedObj[i] = false;
+    }
+    const [flipped, setFlipped] = useState(flippedObj);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setFlipped(prev => !prev);
+            setFlipped(prev => {
+                const i = getRandomInt(1, 18);
+                return {...prev, [i]: !prev[i]}
+            });
         }, 2000);
         
         return () => {
@@ -29,12 +36,12 @@ const Background = () => {
     }, [])
 
     var items = [];
-    for (let i = 2; i <= 18; i++) {
+    for (let i = 1; i <= 18; i++) {
         items.push(
             <div 
                 className={'item item-' + i.toString()}
             >
-                <div className='bg-card'>
+                <div className={'bg-card' + (flipped[i] ? ' bg-card-flipped' : '')}>
                     <img
                         src={images[i]}
                         className="bg-image bg-card-front"
@@ -53,20 +60,6 @@ const Background = () => {
             <div className="bg-main-container">
                 <div className="bg-grid-container bg-anchor-1">
                     <div className="bg-grid">
-                        <div 
-                            className={'item item-1'}
-                        >
-                            <div className={"bg-card" + (flipped ? " bg-card-flipped" : "")}>
-                                <img
-                                    src={images[1]}
-                                    className="bg-image bg-card-front"
-                                />
-                                <img
-                                    src={images[2]}
-                                    className="bg-image bg-card-back"
-                                />
-                            </div>
-                        </div>
                         {items}
                     </div>
                 </div>
