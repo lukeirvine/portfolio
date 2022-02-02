@@ -1,6 +1,7 @@
 .hp2-page {
     width: 100vw;
     min-height: 100vh;
+    position: relative;
 }
 
 .hp2-hero {

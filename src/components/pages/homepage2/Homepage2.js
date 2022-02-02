@@ -25,7 +25,7 @@ const Homepage = () => {
                         <h2 className="hp2-identity-item">Outdoor Adventurer</h2>
                     </div>
                     <p className="hp2-tagline">
-                        I love solving people's problems and making their lives easier 
+                        I solve people's problems and make their lives easier 
                         with engaging MicroSaaS web apps, mostly using React.js and Firebase.
                     </p>
                     <div className="hp2-link-container">
