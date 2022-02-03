@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 import './Footer.css';
 
 const Footer = props => {
@@ -7,23 +9,28 @@ const Footer = props => {
             <div className="container-fluid footer-container">
                 <div className="footer-ig-wrapper footer-large-only">
                     <div className="footer-btn-wrapper">
-                        <button href="https://github.com/lukeirvine" target="_blank" type="button" className="btn btn-link">
+                        <Button 
+                            href="https://github.com/lukeirvine" 
+                            target="_blank" 
+                            className="btn btn-link footer-btn"
+                            variant='link'
+                        >
                             <i className="bi-github footer-icon" />
                             <span className="footer-text">
                                 View on Github
                             </span>
-                        </button>
+                        </Button>
                     </div>
                 </div>
                 <div className="footer-text-wrapper">
                     <p className="footer-text">
-                        Luke irvine
+                        Luke Irvine
                     </p>
                 </div>
                 <div className="footer-text-wrapper footer-large-only">
-                    <p className="footer-text">
+                    <p className="footer-text footer-link">
                         <i className="bi-envelope-fill footer-icon" />
-                        <span><a className="footer-email-link" href="mailto: lukeirvinefreelance@gmail.com">lukeirvinefreelance@gmail.com</a></span>
+                        <a className="footer-link" href="mailto: lukeirvinefreelance@gmail.com">lukeirvinefreelance@gmail.com</a>
                     </p>
                 </div>
             </div>

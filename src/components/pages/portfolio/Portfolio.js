@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './../../nav-bar/NavBar';
+import Footer from './../../footer/Footer';
 import { imgs } from '../../../resources/images';
 import './Portfolio.css';
 
@@ -12,6 +13,34 @@ const Portfolio = () => {
                 <h1 className="apps-title"><i className="bi-tools" />  Apps</h1>
                 <div className="apps-content" >
                     <div className="app-container" id="goaltop-container">
+                        <div className="app-name-container">
+                            <i className="bi-music-note-list app-icon" />
+                            <h2 className="app-name">Show My Piano</h2>
+                        </div>
+                        <p className="app-dates">
+                            January 2022
+                        </p>
+                        <div className="app-content">
+                            <img className="app-demo-img" alt="small groups demo" src={imgs.midi.gm7} />
+                            <div className="app-description">
+                                <p className="app-par">
+                                    Goaltop was born out of having too many little things to do and no good way to keep 
+                                    my eyes on the big milestones I was working towards. A whiteboard above my desk probably 
+                                    would have worked, but I figured it'd be much more effective to have my goals right on 
+                                    my desktop where I'd see them no matter where I was.
+                                </p>
+                                <p className="app-par">
+                                    This app is currently in beta testing but will be available for public use soon.
+                                </p>
+                                <p className="app-par">
+                                    If you'd like to participate in the
+                                    beta, <a href="mailto: lukeirvinefreelance@gmail.com">email me</a> and
+                                    I'll send you the beta access key.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="app-container app-dark" id="goaltop-container">
                         <div className="app-name-container">
                             <i className="bi-arrow-up-circle-fill app-icon" />
                             <h2 className="app-name">GoalTop</h2>
@@ -39,7 +68,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container app-dark" id="smallgroups-container">
+                    <div className="app-container" id="smallgroups-container">
                         <div className="app-name-container">
                             <i className="bi-people-fill app-icon" />
                             <h2 className="app-name">Small Groups Website</h2>
@@ -68,7 +97,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container" id="survey-container">
+                    <div className="app-container app-dark" id="survey-container">
                         <div className="app-name-container">
                             <i className="bi-pencil-square app-icon" />
                             <h2 className="app-name">Survey Counter</h2>
@@ -99,7 +128,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container app-dark" id="meal-container">
+                    <div className="app-container" id="meal-container">
                         <div className="app-name-container">
                             <i className="bi-tv app-icon" />
                             <h2 className="app-name">Meal Announcements</h2>
@@ -128,7 +157,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </>
     )

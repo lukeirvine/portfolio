@@ -6,15 +6,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(52, 58, 64);
     position: sticky;
     bottom: 0px;
+}
+
+.footer-text, .footer-icon, .footer-link {
+    color: rgb(209, 209, 209);
 }
 
 .footer-text {
     margin: 0px;
     padding: 0px;
-    color: gray;
     font-size: 12px;
 }
 
@@ -31,12 +34,11 @@
 }
 
 .footer-icon {
-    color: gray;
     margin-right: 5px;
 }
 
-.footer-email-link {
-    color: gray;
+.footer-link:hover {
+    color: white;
 }
 
 /* Screen size specs */
