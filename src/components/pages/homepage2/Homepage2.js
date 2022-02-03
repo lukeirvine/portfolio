@@ -59,7 +59,8 @@ const Homepage = () => {
                         <Button 
                             variant="light" 
                             className="hp2-link-btn"
-                            href="/music"
+                            as={ Link }
+                            to="/music"
                         >
                             <i className='bi-music-note-beamed' />
                             <span className="hp2-link-btn-text">Music</span>
@@ -67,7 +68,8 @@ const Homepage = () => {
                         <Button 
                             variant="light" 
                             className="hp2-link-btn"
-                            href="/music"
+                            as={ Link }
+                            to="/contact"
                         >
                             <i className='bi-chat-dots' />
                             <span className="hp2-link-btn-text">Contact</span>

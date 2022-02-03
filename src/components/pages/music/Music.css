@@ -1,20 +1,3 @@
-body {
-  background-color: black;
-}
-
-.page-title {
-  font-weight: bold;
-  color: white;
-}
-
-.hero-img {
-  width: 100vw;
-  height: 150px;
-  object-fit: cover;
-  top: 0px;
-  z-index: -1;
-}
-
 
 /* Screen size specs */
 
@@ -27,14 +10,10 @@ body {
 
 
 @media only screen and (min-width: 767px) {
-  .hero-img {
-    height: 250px;
-  }
 }
 
 
 @media only screen and (min-width: 992px) {
-  
 }
 
 

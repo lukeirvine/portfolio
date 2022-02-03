@@ -1,0 +1,122 @@
+.cs-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+@keyframes titleSlide {
+    0% { transform: translateY(-50px) }
+}
+
+.cs-title {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 3px 8px black;
+    box-shadow: 2px 3px 8px black;
+    padding: 20px;
+    border-radius: 20px;
+    animation: 2s ease 0s titleSlide forwards;
+}
+
+.cs-phrase {
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    gap: 8px;
+}
+
+.cs-phrase-word {
+    display: flex;
+}
+
+.cs-phrase-letter {
+    position: relative;
+    text-shadow: 2px 2px 5px black;
+}
+
+@keyframes shake {
+    0% { transform: translateX(5px)}
+    5% { transform: translateX(-5px)}
+    10% { transform: translate(5px, 5px)}
+    15% { transform: translateX(-5px)}
+    20% { transform: translate(5px, -5px)}
+    25% { transform: translateX(-5px)}
+    30% { transform: translateX(5px)}
+    35% { transform: translateX(-5px)}
+    40% { transform: translateX(5px)}
+    45% { transform: translate(-5px, -5px)}
+    50% { transform: translateX(5px)}
+    55% { transform: translate(-5px, 5px)}
+    60% { transform: translateX(5px)}
+    65% { transform: translateX(-5px)}
+    70% { transform: translateX(5px)}
+    75% { transform: translateX(-5px)}
+    80% { transform: translateX(5px)}
+}
+
+@keyframes csTitle1 {
+    0% { transform: translate(-40px, 80px) rotateZ(360deg) }
+    50% { transform: translate(-50px, 40px) }
+}
+@keyframes csTitle2 {
+    0% { transform: translate(-45px, -20px) }
+}
+@keyframes csTitle3 {
+    0% { transform: translate(0px, 50px) }
+    50% { transform: translate(0px, -50px)}
+}
+@keyframes csTitle4 {
+    0% { transform: translate(-30px, 90px) rotateZ(400deg)}
+}
+@keyframes csTitle5 {
+    0% { transform: translate(-40px, -30px) rotateZ(-90deg)}
+}
+@keyframes csTitle6 {
+    0% { transform: translate(-20px, 0px)}
+}
+
+@keyframes csTitle7 {
+    0% { transform: translate(20px, 0px)}
+}
+@keyframes csTitle8 {
+    0% { transform: translate(40px, -70px) rotate(360deg)}
+    50% { transform: translate(0px, 30px) }
+}
+@keyframes csTitle9 {
+    0% { transform: translate(20px, 80px) rotate(180deg)}
+}
+@keyframes csTitle10 {
+    0% { transform: translate(10px, 90px)}
+    50% { transform: translate(40px, 30px) rotate(45deg)}
+}
+
+/* Screen size specs */
+
+@media only screen and (max-width: 576px) {
+}
+
+
+@media only screen and (min-width: 576px) {
+}
+
+
+@media only screen and (min-width: 767px) {
+    .cs-title {
+        font-size: 5em;
+    }
+    .cs-phrase {
+        font-size: 4rem;
+        gap: 20px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+}
+
+
+@media only screen and (min-width: 1200px) {
+}

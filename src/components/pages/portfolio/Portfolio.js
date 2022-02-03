@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from './../../nav-bar/NavBar';
-import Footer from './../../footer/Footer';
+import NavBar from '../../nav-bar/NavBar';
+import Footer from '../../footer/Footer';
 import { imgs } from '../../../resources/images';
 import './Portfolio.css';
 

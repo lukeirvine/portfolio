@@ -15,7 +15,8 @@ const NavBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link as={Link} to="/apps">Apps</Nav.Link>
-                        <Nav.Link href="mailto: lukeirvinefreelance@gmail.com">Contact</Nav.Link>
+                        <Nav.Link as={Link} to="/music">Music</Nav.Link>
+                        <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
