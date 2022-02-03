@@ -2,6 +2,7 @@
     width: 100vw;
     min-height: 100vh;
     position: relative;
+    /* display: none; */
 }
 
 .hp2-hero {

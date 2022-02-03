@@ -15,7 +15,7 @@
 @media only screen and (min-width: 767px) {
     .bg-main-container {
         position: relative;
-        z-index: -1;
+        /* z-index: -1; */
     }
     
     .bg-grid-container {
@@ -29,7 +29,8 @@
         top: 0px;
         height: 100vh;
         width: 100vw;
-        background-color: rgba(0, 0, 0, 0.829);
+        background-color: rgba(0, 0, 0, 0.555);
+        display: none;
     }
 
     .bg-grid {
@@ -44,7 +45,7 @@
         grid-auto-flow: column;
         column-gap: 3px;
         row-gap: 3px;
-        z-index: -1000;
+        z-index: -4;
     }
 
     .item {
@@ -53,6 +54,7 @@
         position: relative;
         z-index: -3;
         background-color: black;
+        /* background-color: pink; */
     }
     .item-1 {
         grid-column: 1 / 3;
@@ -134,25 +136,30 @@
         height: 100%;
         position: absolute;
         transform-style: preserve-3d;
-        transition: all 1s ease;
+        transition: transform 0.75s ease;
     }
     .bg-card-flipped {
         transform: rotateY(180deg);
-        border-style: solid;
-        border-width: thick;
     }
     .bg-image {
         object-fit: cover;
         width: 100%;
         height: 100%;
         position: absolute;
+        border-style: solid;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
     }
     .bg-card-front {
         backface-visibility: hidden;
+        background-color: rgb(117, 211, 255);
+        transition: transform 0.75s ease;
     }
     .bg-card-back {
         backface-visibility: hidden;
         transform: rotateY(180deg);
+        background-color: rgb(85, 85, 85);
     }
 }
 

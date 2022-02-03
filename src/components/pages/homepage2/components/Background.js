@@ -17,6 +17,7 @@ Object.values(imgs).forEach(category => {
 
 const Background = () => {
     let flippedObj = {};
+    flippedObj[0] = 1;
     for (let i = 1; i <= 18; i++) {
         flippedObj[i] = false;
     }
@@ -26,9 +27,9 @@ const Background = () => {
         const interval = setInterval(() => {
             setFlipped(prev => {
                 const i = getRandomInt(1, 18);
-                return {...prev, [i]: !prev[i]}
+                return {...prev, 0: prev[0] % 4 + 1, [i]: !prev[i]}
             });
-        }, 2000);
+        }, 1000);
         
         return () => {
             clearInterval(interval);
@@ -42,14 +43,16 @@ const Background = () => {
                 className={'item item-' + i.toString()}
             >
                 <div className={'bg-card' + (flipped[i] ? ' bg-card-flipped' : '')}>
-                    <img
+                    {/* <img
                         src={images[i]}
                         className="bg-image bg-card-front"
                     />
                     <img
                         src={images[i + 1]}
                         className="bg-image bg-card-back"
-                    />
+                    /> */}
+                    <div className='bg-image bg-card-front'>Front <i className="bi-arrow-up" /></div>
+                    <div className={'bg-image bg-card-back'}>Back</div>
                 </div>
             </div>
         )
@@ -65,8 +68,8 @@ const Background = () => {
                 </div>
             </div>
             <div className="bg-grid-container bg-anchor-2">
-                    <div className="bg-grid-screen"></div>
-                </div>
+                <div className="bg-grid-screen"></div>
+            </div>
         </>
     )
 }
