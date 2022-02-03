@@ -29,7 +29,7 @@ const Background = () => {
                 const i = getRandomInt(1, 18);
                 return {...prev, 0: prev[0] % 4 + 1, [i]: !prev[i]}
             });
-        }, 1000);
+        }, 2500);
         
         return () => {
             clearInterval(interval);
@@ -43,16 +43,16 @@ const Background = () => {
                 className={'item item-' + i.toString()}
             >
                 <div className={'bg-card' + (flipped[i] ? ' bg-card-flipped' : '')}>
-                    {/* <img
+                    <img
                         src={images[i]}
                         className="bg-image bg-card-front"
                     />
                     <img
                         src={images[i + 1]}
                         className="bg-image bg-card-back"
-                    /> */}
-                    <div className='bg-image bg-card-front'>Front <i className="bi-arrow-up" /></div>
-                    <div className={'bg-image bg-card-back'}>Back</div>
+                    />
+                    {/* <div className='bg-image bg-card-front'>Front <i className="bi-arrow-up" /></div>
+                    <div className={'bg-image bg-card-back'}>Back</div> */}
                 </div>
             </div>
         )
