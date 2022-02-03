@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './../../nav-bar/NavBar';
-import Footer from './../../footer/Footer';
+import { imgs } from '../../../resources/images';
 import './Portfolio.css';
 
 const Portfolio = () => {
@@ -20,19 +20,16 @@ const Portfolio = () => {
                             October 2021 - present
                         </p>
                         <div className="app-content">
-                            <img className="app-demo-img" alt="small groups demo" src="https://i.imgur.com/xyYcivg.mp4" />
+                            <img className="app-demo-img" alt="small groups demo" src={imgs.goaltop.dashboard} />
                             <div className="app-description">
                                 <p className="app-par">
-                                    GoalTop was born out of having too much to do and not enough
-                                    motivation to do it. I figured if I could get my goals and intimidating
-                                    countdown timers where I see them everyday, I would be more productive.
-                                    It was either this or buy a whiteboard to go above my desk. I guess I'm 
-                                    too cheap for that.
+                                    Goaltop was born out of having too many little things to do and no good way to keep 
+                                    my eyes on the big milestones I was working towards. A whiteboard above my desk probably 
+                                    would have worked, but I figured it'd be much more effective to have my goals right on 
+                                    my desktop where I'd see them no matter where I was.
                                 </p>
                                 <p className="app-par">
-                                    This is my first app I'm going to market publicly. It is currently in
-                                    beta testing and will hopefully be released for public use in mid
-                                    December 2021, just in time for all those new-years resolutions.
+                                    This app is currently in beta testing but will be available for public use soon.
                                 </p>
                                 <p className="app-par">
                                     If you'd like to participate in the
@@ -51,7 +48,7 @@ const Portfolio = () => {
                             December 2020 - Present
                         </p>
                         <div className="app-content">
-                            <img className="app-demo-img" alt="small groups demo" src="https://i.imgur.com/CBQu48z.mp4" />
+                            <img className="app-demo-img" alt="small groups demo" src={imgs.smallGroups.groupCards} />
                             <div className="app-description">
                                 <p className="app-par">
                                     This is a website I developed to help religious organizations
@@ -80,7 +77,7 @@ const Portfolio = () => {
                             July 2021
                         </p>
                         <div className="app-content">
-                            <img className="app-demo-img" alt="small groups demo" src="https://i.imgur.com/NfaTfld.mp4" />
+                            <img className="app-demo-img" alt="small groups demo" src={imgs.surveyCounter.reports} />
                             <div className="app-description">
                                 <p className="app-par">
                                     I worked at a summer camp for a number of years where we handed out
@@ -111,7 +108,7 @@ const Portfolio = () => {
                             August 2021
                         </p>
                         <div className="app-content">
-                            <img className="app-demo-img" alt="small groups demo" src="https://i.imgur.com/iIgP5Tj.mp4" />
+                            <img className="app-demo-img" alt="small groups demo" src={imgs.mealDash.dash} />
                             <div className="app-description">
                                 <p className="app-par">
                                     This is another app for the summer camp I spent a number of years

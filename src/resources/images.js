@@ -35,5 +35,11 @@ export const imgs = {
     },
     midi: {
         gm7: 'https://i.imgur.com/TsIxURi.png'
+    },
+    videoImgs: {
+        goaltop: 'https://i.imgur.com/xyYcivg.mp4',
+        smallGroups: 'https://i.imgur.com/CBQu48z.mp4',
+        surveyCounter: 'https://i.imgur.com/NfaTfld.mp4',
+        mealDash: 'https://i.imgur.com/iIgP5Tj.mp4'
     }
 }
