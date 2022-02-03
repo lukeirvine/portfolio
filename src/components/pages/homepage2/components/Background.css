@@ -153,12 +153,12 @@
     }
     .bg-card-front {
         backface-visibility: hidden;
-        background-color: rgb(117, 211, 255);
+        /* background-color: rgb(117, 211, 255); */
     }
     .bg-card-back {
         backface-visibility: hidden;
         transform: rotateY(180deg);
-        background-color: rgb(85, 85, 85);
+        /* background-color: rgb(85, 85, 85); */
     }
 }
 

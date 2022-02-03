@@ -38,7 +38,7 @@ const Homepage = () => {
                             <i className='bi-tools' />
                             <span className="hp2-link-btn-text">Apps</span>
                         </Button>
-                        {/* <Button 
+                        <Button 
                             variant="light" 
                             className="hp2-link-btn" 
                             href="https://github.com/lukeirvine" 
@@ -46,7 +46,7 @@ const Homepage = () => {
                         >
                             <i className='bi-github' />
                             <span className="hp2-link-btn-text">Code</span>
-                        </Button> */}
+                        </Button>
                         <Button 
                             variant="light" 
                             className="hp2-link-btn" 

@@ -1,20 +1,8 @@
-body {
-  background-color: rgb(37, 37, 37);
+.c-footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
 }
-
-.page-title {
-  font-weight: bold;
-  color: white;
-}
-
-.hero-img {
-  width: 100vw;
-  height: 150px;
-  object-fit: cover;
-  top: 0px;
-  z-index: -1;
-}
-
 
 /* Screen size specs */
 
@@ -27,14 +15,10 @@ body {
 
 
 @media only screen and (min-width: 767px) {
-  .hero-img {
-    height: 250px;
-  }
 }
 
 
 @media only screen and (min-width: 992px) {
-  
 }
 
 

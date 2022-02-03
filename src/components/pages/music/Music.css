@@ -1,3 +1,8 @@
+.m-footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+}
 
 /* Screen size specs */
 

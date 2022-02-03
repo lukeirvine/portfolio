@@ -9,7 +9,7 @@ const Footer = props => {
                 <div className="footer-ig-wrapper footer-large-only">
                     <div className="footer-btn-wrapper">
                         <Button 
-                            href="https://github.com/lukeirvine" 
+                            href="https://github.com/lukeirvine/portfolio" 
                             target="_blank" 
                             className="btn btn-link footer-btn"
                             variant='link'
