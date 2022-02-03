@@ -9,7 +9,7 @@ const NavBar = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Navbar.Brand>
-                    <Link className="brand-link" to="/"><i className="bi-code-square nav-icon" /> Luke Irvine</Link>
+                    <Link className="brand-link" to="/"><i className="bi-folder nav-icon" /> Luke Irvine</Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
