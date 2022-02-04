@@ -24,18 +24,27 @@ const Portfolio = () => {
                             <img className="app-demo-img" alt="small groups demo" src={imgs.midi.gm7} />
                             <div className="app-description">
                                 <p className="app-par">
-                                    Goaltop was born out of having too many little things to do and no good way to keep 
-                                    my eyes on the big milestones I was working towards. A whiteboard above my desk probably 
-                                    would have worked, but I figured it'd be much more effective to have my goals right on 
-                                    my desktop where I'd see them no matter where I was.
+                                    When I started configuring my setup to teach online piano lessons, I looked for a simple app online that would display 
+                                    a piano keyboard with highlighted keys based on midi signals from an external keyboard. I couldn't find any elegant 
+                                    solutions that clearly displayed just a keyboard and the keys pressed, so I set out to create one.
                                 </p>
                                 <p className="app-par">
-                                    This app is currently in beta testing but will be available for public use soon.
+                                    The keyboard is created entirely using CSS, which was quite a fun and scalable process. It was so satisfying to only 
+                                    create one octave and then loop through the code to create as many octaves as I wanted. The keyboard also has the capability 
+                                    of showing you the name of the chord being played. This process takes a bit of AI, so I used a very helpful npm library for this 
+                                    features. Building on the shoulders of giants is just so cool.
                                 </p>
                                 <p className="app-par">
-                                    If you'd like to participate in the
-                                    beta, <a href="mailto: lukeirvinefreelance@gmail.com">email me</a> and
-                                    I'll send you the beta access key.
+                                    Another interesting concern for this app was speed of execution. The depressed notes are kept track of in an array 
+                                    which has to be appended to or truncated each time a note is played or released. It also has to be searched by each 
+                                    key for that key to know if it should be highlighted or not. Furthermore, the chord analyzer runs every time a key is 
+                                    pressed or released, adding even more complexity. If not implemented in an efficient manner, the app can be 
+                                    easily prone to lagging. I had to refactor the code several times to increase speed and eventually got to a point where 
+                                    you didn't notice any lag, making the display feel like playing a real piano. 
+                                </p>
+                                <p className="app-par">
+                                    This app is currently free to use and hosted <a href="https://lukeirvine.github.io/midi-visualizer/#/" target="_blank">here</a>, though it will 
+                                    soon be monetized and cost a buck or so.  
                                 </p>
                             </div>
                         </div>

@@ -102,8 +102,10 @@
 
     .app-container {
         width: 100%;
-        padding: 30px;
+        padding: 20px;
         padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .app-content {
@@ -116,11 +118,12 @@
 
     .app-demo-img {
         width: 40%;
+        max-height: 200px;
     }
 
     .app-description {
         margin-top: 0px;
-        padding-left: 20px;
+        margin-left: 40px;
     }
 
     .app-dark {
