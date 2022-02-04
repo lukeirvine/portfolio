@@ -126,8 +126,8 @@ const Portfolio = () => {
                                 </p>
                                 <p className="app-list-title">Additional Features:</p>
                                 <ul className="app-list">
-                                    <li>Download json object for survey data to be uploaded to another account</li>
-                                    <li>Create shareable link to display survey data without being logged in</li>
+                                    <li>Can download a json object for survey data to be uploaded to another account</li>
+                                    <li>Can create a shareable link to display survey data without being logged in</li>
                                 </ul>
                                 <p className="app-par">
                                     The camp staff in charge of the surveys loved using this app
