@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { imgs } from '../../../../resources/images';
+import { imgs, imgsSorted } from '../../../../resources/images';
 import { shuffleArray, getRandomInt } from '../../../../resources/functions';
 import './Background.css';
+
+console.log(imgsSorted)
 
 const colors = [
     'yellow', 'red', 'blue', 'green', 'purple', 'orange', 'pink', 'white', 'black', 'gray'
@@ -44,11 +46,11 @@ const Background = () => {
             >
                 <div className={'bg-card' + (flipped[i] ? ' bg-card-flipped' : '')}>
                     <img
-                        src={images[i]}
+                        src={imgsSorted[i].front}
                         className="bg-image bg-card-front"
                     />
                     <img
-                        src={images[i + 1]}
+                        src={imgsSorted[i].back}
                         className="bg-image bg-card-back"
                     />
                     {/* <div className='bg-image bg-card-front'>Front <i className="bi-arrow-up" /></div>

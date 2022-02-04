@@ -43,3 +43,78 @@ export const imgs = {
         mealDash: 'https://i.imgur.com/iIgP5Tj.mp4'
     }
 }
+
+export const imgsSorted = {
+    1: {
+        front: imgs.music.treeFarm,
+        back: imgs.goaltop.dashboard
+    },
+    2: {
+        front: imgs.music.botb,
+        back: imgs.music.winery
+    },
+    3: {
+        front: imgs.music.highlightsConcert,
+        back: imgs.music.jazzTrio
+    },
+    4: {
+        front: imgs.music.winery,
+        back: imgs.music.swingDance
+    },
+    5: {
+        front: imgs.smallGroups.groupCards,
+        back: imgs.mealDash.dash
+    },
+    6: {
+        front: imgs.music.springJam,
+        back: imgs.music.villageHall
+    },
+    7: {
+        front: imgs.mealDash.phone,
+        back: imgs.music.margieOtt
+    },
+    8: {
+        front: imgs.smallGroups.groupCategory,
+        back: imgs.smallGroups.homepage
+    },
+    9: {
+        front: imgs.music.swingDance,
+        back: imgs.music.botb
+    },
+    10: {
+        front: imgs.music.vespersPracticeRoom,
+        back: imgs.music.highlightsConcert
+    },
+    11: {
+        front: imgs.goaltop.dashboard,
+        back: imgs.music.treeFarm
+    },
+    12: {
+        front: imgs.music.vespersOutside,
+        back: imgs.mealDash.phone
+    },
+    13: {
+        front: imgs.music.margieOtt,
+        back: imgs.music.springJam
+    },
+    14: {
+        front: imgs.music.jazzTrio,
+        back: imgs.music.vespersOutside
+    },
+    15: {
+        front: imgs.midi.gm7,
+        back: imgs.goaltop.homepage
+    },
+    16: {
+        front: imgs.music.villageHall,
+        back: imgs.music.vespersPracticeRoom
+    },
+    17: {
+        front: imgs.goaltop.homepage,
+        back: imgs.goaltop.dashboard
+    },
+    18: {
+        front: imgs.surveyCounter.reports,
+        back: imgs.smallGroups.groupCards
+    },
+}
