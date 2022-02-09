@@ -165,6 +165,32 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="app-container app-dark" id="meal-container">
+                        <div className="app-name-container">
+                            <i className="bi-controller app-icon" />
+                            <h2 className="app-name">Maze</h2>
+                        </div>
+                        <p className="app-dates">
+                            February 2020
+                        </p>
+                        <div className="app-content">
+                            <img className="app-demo-img" alt="small groups demo" src={imgs.maze.action} />
+                            <div className="app-description">
+                                <p className="app-par">
+                                    This is the first major computer science project I worked on in college and it was easily the most fun. 
+                                    Humorously, this was written before I understood basic javascript modules, so all the code is in 
+                                    a single 'index.html' file. It's massive! Also there are several notable bugs that make me think 
+                                    back on the early coding days with fondness lol.
+                                </p>
+                                <p className="app-par">
+                                    Anyways, maybe one day I'll go back and refactor it for fun. 
+                                    Until then, you can play it <a target="_blank" href="https://lukeirvine.github.io/maze-with-enemies/">here</a>! 
+                                    You'll need to wait a little bit for everything to load, and if you want sound, make sure to click 
+                                    the sound button *before* you choose a level. It will be chaos if you click it after.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <Footer />
             </div>

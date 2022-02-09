@@ -41,6 +41,9 @@ export const imgs = {
         smallGroups: 'https://i.imgur.com/CBQu48z.mp4',
         surveyCounter: 'https://i.imgur.com/NfaTfld.mp4',
         mealDash: 'https://i.imgur.com/iIgP5Tj.mp4'
+    },
+    maze: {
+        action: 'https://i.imgur.com/2fAw7TO.jpg'
     }
 }
 

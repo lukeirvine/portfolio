@@ -4,7 +4,7 @@
 }
 
 .apps-hero {
-    filter: blur(1px);
+    filter: blur(2px);
     box-shadow: 0px 0px 0px 2px black;
 }
 
@@ -56,6 +56,15 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 25px;
+}
+
+.app-par a {
+    text-decoration: underline;
+}
+
+.app-dark a {
+    text-decoration: underline;
+    color: rgb(0, 238, 255);
 }
 
 .app-list-title {
