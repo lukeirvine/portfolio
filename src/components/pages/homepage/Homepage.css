@@ -1,14 +1,14 @@
-.homepage-page {
+.hp-page {
     width: 100vw;
     position: absolute;
     min-height: 100vh;
 }
 
-.homepage-hero {
+.hp-hero {
     display: none;
 }
 
-.homepage-content {
+.hp-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,46 +16,47 @@
     margin-top: 30px;
 }
 
-.homepage-avatar-wrapper, .homepage-avatar {
+.hp-avatar-wrapper, .hp-avatar {
     width: 150px; height: 150px;
     /* border-radius: 50%; */
 }
 
-.homepage-avatar-wrapper {
+.hp-avatar-wrapper {
     overflow: hidden;
     width: 150px; height: 150px;
     border-radius: 50%;
-    box-shadow: 0px 3px 8px rgb(150, 150, 150);
+    box-shadow: 0px 3px 8px rgb(0, 0, 0);
     margin-bottom: 10px;
 }
 
-.homepage-avatar {
+.hp-avatar {
     width: 200%; height: 200%;
     object-fit: cover;
     object-position: -55px 90%;
 }
 
-.homepage-identity {
+.hp-identity {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.homepage-identity-item {
+.hp-identity-item {
     font-size: 22px;
-    color: gray;
+    color: rgb(219, 219, 219);
     text-align: center;
     margin-right: 2px;
     width: 100%;
 }
 
-.homepage-tagline {
+.hp-tagline {
     padding: 20px;
     padding-bottom: 0px;
     text-align: center;
+    color: white;
 }
 
-.homepage-link-container {
+.hp-link-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -63,22 +64,22 @@
     padding-right: 20px;
 }
 
-.homepage-link-btn {
-    background-color: rgba(0, 0, 0, 0);
+.hp-link-btn {
+    background-color: rgba(255, 255, 255, 0);
     border-style: none;
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
     font-size: 30px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
-.homepage-link-btn:hover {
+.hp-link-btn:hover {
     background-color: rgb(240, 240, 240);
     color: black;
 }
 
-.homepage-link-btn-text {
+.hp-link-btn-text {
     margin-left: 12px;
 }
 
@@ -94,12 +95,12 @@
 
 
 @media only screen and (min-width: 767px) {
-    .homepage-hero {
+    .hp-hero {
         object-position: 50% 0%;
         display: block;
     }
 
-    .homepage-content {
+    .hp-content {
         width: 600px;
         margin-top: 0px;
         position: relative;
@@ -109,7 +110,7 @@
 
 
 @media only screen and (min-width: 992px) {
-    .homepage-hero {
+    .hp-hero {
         object-position: 50% 10%;
     }
 }
