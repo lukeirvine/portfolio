@@ -14,14 +14,14 @@ const Portfolio = () => {
                 <div className="apps-content" >
                     <div className="app-container" id="goaltop-container">
                         <div className="app-name-container">
-                            <i className="bi-music-note-list app-icon" />
-                            <h2 className="app-name">Show My Piano</h2>
+                            <i className="bi-music-note-beamed app-icon" />
+                            <h2 className="app-name">Midi Display</h2>
                         </div>
                         <p className="app-dates">
                             January 2022
                         </p>
                         <div className="app-content">
-                            <img className="app-demo-img" alt="small groups demo" src={imgs.midi.gm7} />
+                            <img className="app-demo-img" alt="small groups demo" src="https://i.imgur.com/CAMlsFN.png" />
                             <div className="app-description">
                                 <p className="app-par">
                                     When I started configuring my setup to teach online piano lessons, I looked for a simple app online that would display 
@@ -43,7 +43,7 @@ const Portfolio = () => {
                                     you didn't notice any lag, making the display feel like playing a real piano. 
                                 </p>
                                 <p className="app-par">
-                                    This app is currently free to use and hosted <a href="https://lukeirvine.github.io/midi-visualizer/#/" target="_blank">here</a>, though it will 
+                                    This app is currently free to use at <a href="https://www.mididisplay.com" target="_blank">mididisplay.com</a>, though it will 
                                     soon be monetized and cost a buck or so.  
                                 </p>
                             </div>
