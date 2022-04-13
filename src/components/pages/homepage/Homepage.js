@@ -56,6 +56,24 @@ const Homepage = () => {
                             <i className='bi-linkedin' />
                             <span className="hp-link-btn-text">Linkedin</span>
                         </Button>
+                        <Button 
+                            variant="light" 
+                            className="hp-link-btn" 
+                            href="https://www.upwork.com/freelancers/~0188a15de9cd140909?viewMode=1" 
+                            target="_blank"
+                        >
+                            <i className='bi-code-slash' />
+                            <span className="hp-link-btn-text">Upwork</span>
+                        </Button>
+                        <Button 
+                            variant="light" 
+                            className="hp-link-btn"
+                            as={ Link }
+                            to="/contact"
+                        >
+                            <i className='bi-envelope' />
+                            <span className="hp-link-btn-text">Contact</span>
+                        </Button>
                         {/* <Button variant="light" className="hp-link-btn">
                             <i className='bi-youtube' />
                             <span className="hp-link-btn-text">Music</span>

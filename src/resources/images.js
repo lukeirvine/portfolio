@@ -47,6 +47,12 @@ export const imgs = {
     },
     wordle: {
         desktop: 'https://i.imgur.com/tr3Ri06.png'
+    },
+    profile: {
+        haystack: 'https://i.imgur.com/0TqSrW1.jpg'
+    },
+    scenery: {
+        baker: 'https://i.imgur.com/9hZQkUs.jpg'
     }
 }
 

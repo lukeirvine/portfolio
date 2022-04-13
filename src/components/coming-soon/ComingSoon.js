@@ -15,7 +15,6 @@ const phrase = (
             return (
                 <div key={i1} className="cs-phrase-word">
                     {word.map((letter, i2) => {
-                        console.log('letter num', i2 + 1 + base)
                         return (
                             <div 
                                 key={i2} 

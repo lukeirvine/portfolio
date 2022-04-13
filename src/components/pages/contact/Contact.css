@@ -4,6 +4,56 @@
     width: 100vw;
 }
 
+.ct-page {
+    color: white;
+    background-image: linear-gradient(rgb(94, 94, 94), rgb(31, 31, 31));
+    height: 100vh;
+}
+
+.ct-hero-img {
+    width: 100vw;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0px 5px 5px black;
+    filter: blur(3px);
+    object-position: 50% 0%;
+}
+
+.ct-avatar-container {
+    height: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.ct-avatar-wrapper, .ct-avatar {
+    width: 150px; height: 150px;
+    /* border-radius: 50%; */
+}
+
+.ct-avatar-wrapper {
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 5px 8px rgb(0, 0, 0);
+    margin-bottom: 10px;
+    position: relative;
+    top: -75px;
+}
+
+.ct-avatar {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: -0px -0px;
+}
+
+.ct-content-wrapper {
+    padding: 15px;
+}
+
+.ct-link {
+    color: rgb(0, 247, 255);
+    font-weight: bold;
+}
+
 /* Screen size specs */
 
 @media only screen and (max-width: 576px) {
@@ -15,12 +65,35 @@
 
 
 @media only screen and (min-width: 767px) {
+    .ct-page {
+    }
+
+    .ct-hero-img {
+        height: 200px;
+        object-position: 50% 0%;
+    }
+
+    .ct-content-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .ct-content {
+        width: 400px;
+    }
 }
 
 
 @media only screen and (min-width: 992px) {
+    .ct-hero-img {
+        object-position: 0px -200px;
+    }
 }
 
 
 @media only screen and (min-width: 1200px) {
+    .ct-hero-img {
+        height: 300px;
+        object-position: 0px -250px;
+    }
 }
