@@ -44,6 +44,9 @@ export const imgs = {
     },
     maze: {
         action: 'https://i.imgur.com/2fAw7TO.jpg'
+    },
+    wordle: {
+        desktop: 'https://i.imgur.com/tr3Ri06.png'
     }
 }
 

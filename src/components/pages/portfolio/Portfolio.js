@@ -14,6 +14,36 @@ const Portfolio = () => {
                 <div className="apps-content" >
                     <div className="app-container" id="goaltop-container">
                         <div className="app-name-container">
+                            <i className="bi-chat-text-fill app-icon" />
+                            <h2 className="app-name">Wordle Solver</h2>
+                        </div>
+                        <p className="app-dates">
+                            March 2022
+                        </p>
+                        <div className="app-content">
+                            <img className="app-demo-img" alt="small groups demo" src={imgs.wordle.desktop} />
+                            <div className="app-description">
+                                <p className="app-par">
+                                    Wordle is a fun little word guessing game on the New York Times' <a target="_blank" href="https://www.nytimes.com/games/wordle/index.html">website</a>. 
+                                    It only lets you try to guess one word a day, and it quickly took off on social media when everyone started 
+                                    sharing how many guesses it took them.
+                                </p>
+                                <p className="app-par">
+                                    I was fascinated by the type of clues the game gives you, and wondered how hard it would be to filter Wordle's 
+                                    word list based on the clue criteria. As a web developer I had to build a UI so other people could use it too, 
+                                    which was a challenge of its own because I wanted to replicate the UI of the game itself. What resulted is a Wordle 
+                                    solver that is pretty intuitive, easy to use, and still allows the user to engage with the actual game because they 
+                                    have to choose which word to guess next based on the filtered word list. 
+                                </p>
+                                <p className="app-par">
+                                    You too can shamelessly cheat at Wordle <a target="_blank" href="https://lukeirvine.github.io/wordle-solver">here</a>. 
+                                    I won't tell anyone. :)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="app-container app-dark" id="goaltop-container">
+                        <div className="app-name-container">
                             <i className="bi-music-note-beamed app-icon" />
                             <h2 className="app-name">Midi Display</h2>
                         </div>
@@ -49,7 +79,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container app-dark" id="goaltop-container">
+                    <div className="app-container" id="goaltop-container">
                         <div className="app-name-container">
                             <i className="bi-arrow-up-circle-fill app-icon" />
                             <h2 className="app-name">GoalTop</h2>
@@ -77,7 +107,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container" id="smallgroups-container">
+                    <div className="app-container app-dark" id="smallgroups-container">
                         <div className="app-name-container">
                             <i className="bi-people-fill app-icon" />
                             <h2 className="app-name">Small Groups Website</h2>
@@ -106,7 +136,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container app-dark" id="survey-container">
+                    <div className="app-container" id="survey-container">
                         <div className="app-name-container">
                             <i className="bi-pencil-square app-icon" />
                             <h2 className="app-name">Survey Counter</h2>
@@ -137,7 +167,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container" id="meal-container">
+                    <div className="app-container app-dark" id="meal-container">
                         <div className="app-name-container">
                             <i className="bi-tv app-icon" />
                             <h2 className="app-name">Meal Announcements</h2>
@@ -165,7 +195,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container app-dark" id="meal-container">
+                    <div className="app-container" id="meal-container">
                         <div className="app-name-container">
                             <i className="bi-controller app-icon" />
                             <h2 className="app-name">Maze</h2>
