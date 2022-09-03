@@ -53,6 +53,9 @@ export const imgs = {
     },
     scenery: {
         baker: 'https://i.imgur.com/9hZQkUs.jpg'
+    },
+    mivodenApp: {
+        threeScreens: 'https://i.imgur.com/pWgFS94.png'
     }
 }
 

@@ -14,6 +14,46 @@ const Portfolio = () => {
                 <div className="apps-content" >
                     <div className="app-container" id="goaltop-container">
                         <div className="app-name-container">
+                            <i className="bi-phone app-icon" />
+                            <h2 className="app-name">Camp Mivoden Mobile App</h2>
+                        </div>
+                        <p className="app-dates">
+                            Summer 2022
+                        </p>
+                        <div className="app-content">
+                            <img className="app-demo-img" alt="small groups demo" src={imgs.mivodenApp.threeScreens} />
+                            <div className="app-description">
+                                <p className="app-par">
+                                    Camp Mivoden is a Christian summer camp and retreat center in Northern Idaho. I've had the privilege of working there for several 
+                                    summers, so they asked me to create a mobile app that would feature camp media and provide 
+                                    tools for new campers like an interactive map and up-to-date schedules.
+                                </p>
+                                <p className="app-par">
+                                    From start to finish this app was a really fun learning experience. The administrative team 
+                                    at Mivoden is less technically experienced so I got to interpret their desires into modular 
+                                    features and realistic release versions. Once the minimum viable product was complete, 
+                                    I spent the summer on-site monitoring the beta test. All the summer staff downloaded a beta version of the 
+                                    app from Apple's TestFlight and gave me lots of helpful feedback and ideas. Throughout the summer I 
+                                    worked on bug fixes, Apple App Store compliance, and the marketing materials for the App Store. Then towards 
+                                    the end of the summer I released a finished version to the iOS app store for the final week of 
+                                    campers to download and use.
+                                </p>
+                                <p className="app-par">
+                                    This project also includes an accompanying web UI allowing Mivoden staff to edit schedules, media, 
+                                    and map data without editing the code itself. The mobile app was built with React Native and 
+                                    Expo's managed workflow, the web UI was built with ReactJS, and both apps use Google's Firebase for 
+                                    a database, authentication, and cloud functions.
+                                </p>
+                                <p className="app-par">
+                                    This project is still far from finished. There are UX changes to make to both apps, necessaary 
+                                    features to release, and an Android version to release. You can check out 
+                                    the Mivoden app on the <a target="_blank" href="https://apps.apple.com/us/app/camp-mivoden/id1628255508">App Store</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="app-container app-dark" id="goaltop-container">
+                        <div className="app-name-container">
                             <i className="bi-chat-text-fill app-icon" />
                             <h2 className="app-name">Wordle Solver</h2>
                         </div>
@@ -42,7 +82,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container app-dark" id="goaltop-container">
+                    <div className="app-container" id="goaltop-container">
                         <div className="app-name-container">
                             <i className="bi-music-note-beamed app-icon" />
                             <h2 className="app-name">Midi Display</h2>
@@ -79,7 +119,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container" id="goaltop-container">
+                    <div className="app-container app-dark" id="goaltop-container">
                         <div className="app-name-container">
                             <i className="bi-arrow-up-circle-fill app-icon" />
                             <h2 className="app-name">GoalTop</h2>
@@ -107,7 +147,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container app-dark" id="smallgroups-container">
+                    <div className="app-container" id="smallgroups-container">
                         <div className="app-name-container">
                             <i className="bi-people-fill app-icon" />
                             <h2 className="app-name">Small Groups Website</h2>
@@ -136,7 +176,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container" id="survey-container">
+                    <div className="app-container app-dark" id="survey-container">
                         <div className="app-name-container">
                             <i className="bi-pencil-square app-icon" />
                             <h2 className="app-name">Survey Counter</h2>
@@ -167,7 +207,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container app-dark" id="meal-container">
+                    <div className="app-container" id="meal-container">
                         <div className="app-name-container">
                             <i className="bi-tv app-icon" />
                             <h2 className="app-name">Meal Announcements</h2>
@@ -195,7 +235,7 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="app-container" id="meal-container">
+                    <div className="app-container app-dark" id="meal-container">
                         <div className="app-name-container">
                             <i className="bi-controller app-icon" />
                             <h2 className="app-name">Maze</h2>
