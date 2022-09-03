@@ -4,6 +4,45 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Homepage.css'
 
+const techStack = [
+    {
+        name: "JavaScript",
+        url: "https://www.javascript.com/"
+    },
+    {
+        name: "Python",
+        url: "https://www.python.org/"
+    },
+    {
+        name: "C++",
+        url: "https://cplusplus.com/"
+    },
+    {
+        name: "React.js",
+        url: "https://reactjs.org/"
+    },
+    {
+        name: "React Native",
+        url: "https://reactnative.dev/"
+    },
+    {
+        name: "Expo",
+        url: "https://docs.expo.dev/"
+    },
+    {
+        name: "Firebase",
+        url: "https://firebase.google.com"
+    },
+    {
+        name: "Babylon.js",
+        url: "https://www.babylonjs.com/"
+    },
+    {
+        name: "CSS",
+        url: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+]
+
 const Homepage = () => {
     return (
         <>
@@ -20,7 +59,7 @@ const Homepage = () => {
                     </div>
                     <h1 className="page-title">Luke Irvine</h1>
                     <div className="hp-identity">
-                        <h2 className="hp-identity-item">Full-stack Developer, </h2>
+                        <h2 className="hp-identity-item">Full-Stack Developer, </h2>
                         <h2 className="hp-identity-item">Musician, </h2>
                         <h2 className="hp-identity-item">Outdoor Adventurer</h2>
                     </div>
@@ -28,6 +67,11 @@ const Homepage = () => {
                         I love solving people's problems and making their lives easier 
                         with engaging MicroSaaS web apps, mostly using React.js and Firebase.
                     </p>
+                    <div className="hp-tech-stack">
+                        {techStack.map(item => (
+                            <a target="_blank" className="hp-tech-stack-item" href={item.url}>{item.name}</a>
+                        ))}
+                    </div>
                     <div className="hp-link-container">
                         <Button 
                             variant="light" 
