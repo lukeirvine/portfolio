@@ -1,0 +1,144 @@
+.p2-page {
+  width: 100vw;
+  background-image: linear-gradient(rgb(52, 58, 64), rgb(14, 14, 14));
+}
+
+.p2-title {
+  color: white;
+  font-size: 80px;
+  letter-spacing: 10px;
+  padding-top: 0px;
+  padding-left: 50px;
+  text-shadow: 3px 3px 0px rgba(0, 255, 255, 0.602);
+  position: absolute;
+}
+
+.p2-canvas {
+  height: 87vh;
+  width: 100vw;
+  /* border-style: solid; */
+  border-color: white;
+  position: relative;
+}
+
+.p2-left-btn, .p2-right-btn {
+  height: 70vh;
+  width: 200px;
+  /* background-color: rgba(0, 128, 0, 0.353); */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  padding-top: 10%;
+}
+
+.p2-left-btn:hover *, .p2-right-btn:hover * {
+  font-size: 2.5rem;
+}
+
+.p2-left-btn:active *, .p2-right-btn:active * {
+  color: gray;
+}
+
+.p2-left-btn {
+  left: 0px;
+}
+
+.p2-right-btn {
+  right: 0px;
+}
+
+.p2-btn-icon {
+  font-size: 2rem;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.p2-group {
+  height: 100%;
+  width: 100%;
+}
+
+.p2-group-hide {
+  display: none;
+}
+
+.p2-subtitle {
+  color: white;
+  /* position: absolute; */
+  font-size: 2.5rem;
+}
+
+.p2-img {
+  margin-bottom: 10px;
+  object-fit: cover;
+  width: 100%;
+  max-height: 50%;
+  border-style: solid;
+  /* position: absolute; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px black;
+}
+
+.p2-desc {
+  position: absolute;
+  width: 30%;
+  height: 80%;
+  background-color: rgb(40, 40, 40);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0px 0px 20px black;
+  overflow: scroll;
+}
+
+.p2-par {
+  color: rgb(199, 199, 199);
+}
+
+.p2-col1 {
+  position: absolute;
+  left: 20%;
+  top: 14%;
+  width: 35%;
+}
+
+.p2-subtitle {
+  /* left: 20%; */
+  /* top: 14%; */
+  margin-bottom: 15px;
+  text-shadow: -3px -3px 0px rgba(0, 255, 195, 0.602);
+  text-shadow: 3px 3px 0px rgba(230, 0, 255, 0.602);
+}
+
+.p2-img {
+  /* top: 25%; */
+  /* left: 20%; */
+}
+
+.p2-desc {
+  top: 15%;
+  left: 57%;
+}
+
+/* Screen size specs */
+
+@media only screen and (max-width: 576px) {
+}
+
+
+@media only screen and (min-width: 576px) {
+}
+
+
+@media only screen and (min-width: 767px) {
+}
+
+
+@media only screen and (min-width: 992px) {
+}
+
+
+@media only screen and (min-width: 1200px) {
+}
