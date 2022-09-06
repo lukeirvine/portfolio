@@ -3,6 +3,7 @@ import NavBar from '../../nav-bar/NavBar';
 import Footer from '../../footer/Footer';
 import { imgs } from '../../../resources/images';
 import ProgressMeter from './components/ProgressMeter';
+import ScrollToTop from '../../scrolling/ScrollToTop';
 import "./Portfolio2.css";
 
 const content = [
@@ -223,6 +224,7 @@ const Portfolio2 = () => {
   }
 
   return <>
+    <ScrollToTop />
     <NavBar />
     <div className="p2-page">
       <h1 className="p2-title">Apps</h1>

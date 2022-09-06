@@ -59,8 +59,8 @@ const Homepage = () => {
                     </div>
                     <h1 className="page-title">Luke Irvine</h1>
                     <div className="hp-identity">
-                        <h2 className="hp-identity-item">Full-Stack Developer, </h2>
-                        <h2 className="hp-identity-item">Musician, </h2>
+                        <h2 className="hp-identity-item">Full-Stack Developer </h2>
+                        <h2 className="hp-identity-item">Musician </h2>
                         <h2 className="hp-identity-item">Outdoor Adventurer</h2>
                     </div>
                     <p className="hp-tagline">
