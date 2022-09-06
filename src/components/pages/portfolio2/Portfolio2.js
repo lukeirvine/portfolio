@@ -19,6 +19,9 @@ const Portfolio2 = () => {
       page.addEventListener('swipe', swipeFunction)
 
       return () => page.removeEventListener('swipe', swipeFunction)
+    } else {
+      document.addEventListener('keydown', handleKeyDown);
+      return () => document.removeEventListener('keydown', handleKeyDown);
     }
   }, []);
 
@@ -31,6 +34,18 @@ const Portfolio2 = () => {
     }
     if (directions.right) {
       decrementIndex();
+    }
+  }
+
+  const handleKeyDown = e => {
+    console.log("Key:", e.which);
+    if (e.which === 37) {
+      // left arrow
+      decrementIndex();
+    }
+    if (e.which === 39) {
+      // right arrow or spacebar
+      incrementIndex();
     }
   }
 
