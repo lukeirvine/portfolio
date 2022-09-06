@@ -14,7 +14,7 @@
 }
 
 .p2-canvas {
-  height: 87vh;
+  height: 93vh;
   width: 100vw;
   /* border-style: solid; */
   border-color: white;
@@ -35,7 +35,7 @@
 }
 
 .p2-left-btn:hover *, .p2-right-btn:hover * {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 
 .p2-left-btn:active *, .p2-right-btn:active * {
@@ -59,16 +59,29 @@
 .p2-group {
   height: 100%;
   width: 100%;
+  transition: opacity 2s ease-in-out;
+  position: absolute;
 }
 
 .p2-group-hide {
-  display: none;
+  opacity: 0;
+}
+
+.p2-text {
+  margin-bottom: 15px;
 }
 
 .p2-subtitle {
   color: white;
   /* position: absolute; */
   font-size: 2.5rem;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.p2-date {
+  color: rgb(209, 209, 209);
+  font-size: 1rem;
 }
 
 .p2-img {
@@ -85,7 +98,7 @@
 .p2-desc {
   position: absolute;
   width: 30%;
-  height: 80%;
+  max-height: 65%;
   background-color: rgb(40, 40, 40);
   border-radius: 20px;
   padding: 15px;
@@ -104,22 +117,92 @@
   width: 35%;
 }
 
+.p2-text {
+  animation: 2s ease-in-out 0s subtitleSlideIn forwards;
+  transition: opacity 1s ease-in-out;
+}
+
+.p2-group-hide .p2-text {
+  animation: 2s ease-in-out 0s subtitleSlideOut forwards;
+}
+
 .p2-subtitle {
   /* left: 20%; */
   /* top: 14%; */
-  margin-bottom: 15px;
   text-shadow: -3px -3px 0px rgba(0, 255, 195, 0.602);
   text-shadow: 3px 3px 0px rgba(230, 0, 255, 0.602);
+  /* transition: transform 1s ease-in-out; */
+}
+
+@keyframes subtitleSlideIn {
+  50% {
+    transform: scale(0.01);
+  }
+}
+
+@keyframes subtitleSlideOut {
+  50% {
+    transform: scale(0.01);
+  }
 }
 
 .p2-img {
   /* top: 25%; */
   /* left: 20%; */
+  transform-style: preserve-3d;
+  animation: 2s ease-in-out 0s imgSlideIn forwards;
+}
+
+.p2-group-hide .p2-img {
+  animation: 2s ease-in-out 0s imgSlideOut forwards;
+}
+
+@keyframes imgSlideOut {
+  50% { 
+    transform: translate(-70%, 10%) rotateY(90deg); 
+    font-size: 2rem;
+    z-index: -1;
+  }
+  100% { 
+    transform: translate(0%, 20%) rotateY(180deg); 
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes imgSlideIn {
+  0% {
+    transform: translate(0%, -20%) rotateY(-180deg);
+    font-size: 1.5rem;  
+    z-index: -1;
+    opacity: 0;
+  }
+  50% {
+    transform: translate(70%, -10%) rotateY(-90deg);
+    font-size: 2rem;
+    opacity: 0.5
+  }
 }
 
 .p2-desc {
   top: 15%;
   left: 57%;
+  animation: 2s ease-in-out 0s descSlideIn forwards;
+}
+
+.p2-group-hide .p2-desc {
+  animation: 2s ease-in-out 0s descSlideOut forwards;
+}
+
+@keyframes descSlideOut {
+  100% {
+    transform: translateY(-500%)
+  }
+}
+
+@keyframes descSlideIn {
+  0% {
+    transform: translateY(500%)
+  }
 }
 
 /* Screen size specs */

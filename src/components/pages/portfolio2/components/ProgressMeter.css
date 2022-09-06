@@ -1,0 +1,117 @@
+.pm-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 4%;
+}
+
+.pm-line {
+  width: 80%;
+  height: 6px;
+  background-color: rgb(0, 148, 0);
+  border-radius: 3px;
+}
+
+.pm-active-dot {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: rgb(0, 255, 0);
+  position: absolute;
+  transition: all 1s ease-in-out;
+  top: -8px;
+  transform: translateX(-4px);
+}
+
+.pm-text {
+  position: absolute;
+  bottom: 10px;
+  translate: -40%;
+  max-width: 100px;
+  z-index: 50;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.pm-title {
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(230, 0, 255, 0.602);
+}
+
+.pm-date {
+  font-size: 0.6rem;
+  color: rgb(210, 210, 210);
+  text-align: center;
+  vertical-align: text-top;
+}
+
+.pm-dot {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: rgb(0, 148, 0);
+  position: absolute;
+  top: -4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Linked Animations */
+
+:root {
+  --biggen-time: 0.5s;
+  --lessen-time: 0.2s;
+}
+
+.pm-group {
+  cursor: pointer;
+}
+
+.pm-group:hover .pm-text {
+  animation: var(--biggen-time) ease-in-out 0s biggen forwards;
+}
+.pm-group .pm-text {
+  animation: var(--lessen-time) ease-in-out 0s lessen forwards;
+}
+
+.pm-group:hover .pm-dot {
+  transform: scale(1.5);
+}
+
+@keyframes biggen {
+  33% {
+    transform: translate(0px, -20px) scale(1.8);
+  }
+  100% {
+    transform: translate(0px, -15px) scale(1.6);
+  }
+}
+
+@keyframes lessen {
+  0% {
+    transform: translate(0px, -15px) scale(1.6);
+  }
+}
+
+/* Screen size specs */
+
+@media only screen and (max-width: 576px) {
+}
+
+
+@media only screen and (min-width: 576px) {
+}
+
+
+@media only screen and (min-width: 767px) {
+}
+
+
+@media only screen and (min-width: 992px) {
+}
+
+
+@media only screen and (min-width: 1200px) {
+}

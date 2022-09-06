@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import NavBar from '../../nav-bar/NavBar';
 import Footer from '../../footer/Footer';
 import { imgs } from '../../../resources/images';
+import ProgressMeter from './components/ProgressMeter';
 import "./Portfolio2.css";
 
 const content = [
@@ -93,6 +94,120 @@ const content = [
         soon be monetized and cost a buck or so.
       </>
     ]
+  },
+  {
+    title: "GoalTop",
+    date: "October 2021",
+    img: imgs.goaltop.dashboard,
+    bgColor: 'pink',
+    pars: [
+      <>
+        Goaltop was born out of having too many little things to do and no good way to keep 
+        my eyes on the big milestones I was working towards. A whiteboard above my desk probably 
+        would have worked, but I figured it'd be much more effective to have my goals right on 
+        my desktop where I'd see them no matter where I was.
+      </>,
+      <>
+        This app is currently in beta testing but will be available for public use soon.
+      </>,
+      <>
+        If you'd like to participate in the
+        beta, <a href="mailto: lukeirvinefreelance@gmail.com">email me</a> and
+        I'll send you the beta access key.
+      </>
+    ]
+  },
+  {
+    title: "Survey Counter",
+    date: "July 2021",
+    img: imgs.surveyCounter.reports,
+    bgColor: 'pink',
+    pars: [
+      <>
+        I worked at a summer camp for a number of years where we handed out
+        paper surveys to the kids every week, but counting them and getting
+        any kind of real data from them was a real pain. So I developed this app
+        that makes entering the data extremely fast and then creates a series of
+        bar charts and averages for the data.
+      </>,
+      <>
+        <p className="app-list-title">Additional Features:</p>
+        <ul className="app-list">
+            <li>Can download a json object for survey data to be uploaded to another account</li>
+            <li>Can create a shareable link to display survey data without being logged in</li>
+        </ul>
+      </>,
+      <>
+        The camp staff in charge of the surveys loved using this app
+        and enjoyed being able to quickly share results with other staff via
+        the shareable link and will no doubt be using this app in future summers.
+      </>
+    ]
+  },
+  {
+    title: "TV Display",
+    date: "August 2021",
+    img: imgs.mealDash.dash2,
+    bgColor: 'pink',
+    pars: [
+      <>
+        This is another app for the summer camp I spent a number of years
+        working for. During our family camps, we would have chaotic meal times
+        where campers would try to listen for when they were dismissed for
+        food and when they were dismissed for activities. It was a mess, so
+        I developed a small webpage that we loaded up on a smart tv in the
+        cafeteria, and a mobile site that controlled what was shown on
+        the tv in real time.
+      </>,
+      <>
+        All the camp leadership loved this app because it completely
+        streamlined their meals, making for happier campers and more
+        time for the campers to do the activities they came to do.
+      </>
+    ]
+  },
+  {
+    title: "Small Groups Website",
+    date: "December 2020",
+    img: imgs.smallGroups.groupCards,
+    bgColor: 'pink',
+    pars: [
+      <>
+        This is a website I developed to help religious organizations
+        facilitate small group signups and facilitation. It shows potential group
+        members the different groups available, how many people are in each along with
+        other information, and allows them to sign up and leave different groups.
+      </>,
+      <>
+        It's built using React.js, React Bootstrap Components, and Firebase.
+        It utilizes several Firebase features such as the Realtime Database,
+        Cloud Storage, Cloud Functions, and Authentication.
+      </>,
+      <>
+        This app isn't in production yet, but will hopefully be implemented and
+        used by Walla Walla Universtiy's Chaplain's Office in January of 2022.
+      </>
+    ]
+  },
+  {
+    title: "Maze",
+    date: "February 2020",
+    img: imgs.maze.action,
+    bgColor: 'pink',
+    pars: [
+      <>
+        This is the first major computer science project I worked on in college and it was easily the most fun. 
+        Humorously, this was written before I understood basic javascript modules, so all the code is in 
+        a single 'index.html' file. It's massive! Also there are several notable bugs that make me think 
+        back on the early coding days with fondness lol.
+      </>,
+      <>
+        Anyways, maybe one day I'll go back and refactor it for fun. 
+        Until then, you can play it <a target="_blank" href="https://lukeirvine.github.io/maze-with-enemies/">here</a>! 
+        You'll need to wait a little bit for everything to load, and if you want sound, make sure to click 
+        the sound button *before* you choose a level. It will be chaos if you click it after.
+      </>
+    ]
   }
 ]
 
@@ -121,14 +236,22 @@ const Portfolio2 = () => {
         {content.map((proj, i) => (
           <div className={"p2-group " + (i === index ? "" : "p2-group-hide")}>
             <div className="p2-col1">
-              <h2 className={"p2-subtitle p2-subtitle-" + i.toString()}>{proj.title}</h2>
+              <div className="p2-text">
+                <h2 className={"p2-subtitle p2-subtitle-" + i.toString()}>{proj.title}</h2>
+                <h3 className="p2-date">{proj.date}</h3>
+              </div>
               <img
                 className={"p2-img p2-img-" + i.toString()}
                 src={proj.img}
                 style={{backgroundColor: proj.bgColor}}
               />
             </div>
-            <div className={"p2-desc p2-desc-" + i.toString()}>
+            <div 
+              className={"p2-desc p2-desc-" + i.toString()}
+              style={{
+                zIndex: i === index ? 10 : 0
+              }}
+            >
               {proj.pars.map(par => (
                 <p className="p2-par">
                   {par}
@@ -138,8 +261,13 @@ const Portfolio2 = () => {
           </div>
         ))}
       </div>
+      <ProgressMeter 
+        index={index} 
+        setIndex={setIndex} 
+        content={content}
+      />
     </div>
-    <Footer />
+    {/* <Footer /> */}
   </>
 }
 

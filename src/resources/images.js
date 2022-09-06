@@ -25,7 +25,8 @@ export const imgs = {
     },
     mealDash: {
         phone: 'https://i.imgur.com/pN6d4aU.jpg',
-        dash: 'https://i.imgur.com/sJXxmQ3.png'
+        dash: 'https://i.imgur.com/sJXxmQ3.png',
+        dash2: 'https://i.imgur.com/sLzZzcr.png',
     },
     smallGroups: {
         groupCategory: 'https://i.imgur.com/ccimp3e.png',
