@@ -13,6 +13,7 @@ const ProgressMeter = (props) => {
       <div className="pm-line"></div>
       {content.map((item, i) => (
         <div 
+          key={i}
           className="pm-group"
           onClick={() => {
             setIndex(i);
