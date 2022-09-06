@@ -11,12 +11,15 @@ const Portfolio2 = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    var page = document.getElementById("p2-page");
-    var listener = SwipeListener(page);
-    console.log("adding listener");
-    page.addEventListener('swipe', swipeFunction)
+    console.log(window.screen.width)
+    if (window.screen.width < 992) {
+      var page = document.getElementById("p2-page");
+      var listener = SwipeListener(page);
+      console.log("adding listener");
+      page.addEventListener('swipe', swipeFunction)
 
-    return () => page.removeEventListener('swipe', swipeFunction)
+      return () => page.removeEventListener('swipe', swipeFunction)
+    }
   }, []);
 
   const swipeFunction = e => {
