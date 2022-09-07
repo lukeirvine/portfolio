@@ -49,7 +49,7 @@
     translate: -40%;
     max-width: 100px;
     z-index: 50;
-    /* transition: all 0.3s ease-in-out; */
+    transition: opacity 0.2s ease-in-out;
   }
   
   .pm-title {
@@ -98,6 +98,10 @@
   .pm-group:hover .pm-dot {
     transform: scale(1.5);
   }
+
+  .pm-group:active .pm-text {
+    opacity: 0.5;
+  }
   
   @keyframes biggen {
     33% {
@@ -111,6 +115,15 @@
   @keyframes lessen {
     0% {
       transform: translate(0px, -15px) scale(1.6);
+    }
+  }
+
+  @keyframes groupClick {
+    0% {
+      transform: translate(0px, -15px) scale(1.6);
+    }
+    100% {
+      transform: scale(1.4) translate(0px, -5px);
     }
   }
 }

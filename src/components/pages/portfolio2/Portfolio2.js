@@ -5,6 +5,7 @@ import ProgressMeter from './components/ProgressMeter';
 import ScrollToTop from '../../scrolling/ScrollToTop';
 import { content } from './Content';
 import SwipeListener from 'swipe-listener';
+import SwipePrompt from './components/SwipePrompt';
 import "./Portfolio2.css";
 
 const Portfolio2 = () => {
@@ -100,6 +101,7 @@ const Portfolio2 = () => {
           </div>
         ))}
       </div>
+      <SwipePrompt />
       <ProgressMeter 
         index={index} 
         setIndex={setIndex} 

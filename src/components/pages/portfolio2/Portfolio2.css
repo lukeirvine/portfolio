@@ -10,11 +10,13 @@
 }
 
 .p2-title {
+  /* font-family: 'Fugaz One', cursive; */
   color: white;
   font-size: 50px;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   text-shadow: 3px 3px 0px rgba(0, 255, 255, 0.602);
   padding-left: 15px;
+  padding-top: 10px;
   /* background-color: purple; */
 }
 
@@ -60,6 +62,7 @@
 }
 
 .p2-subtitle {
+  /* font-family: 'Fugaz One', cursive; */
   color: white;
   /* position: absolute; */
   font-size: 1.8rem;
