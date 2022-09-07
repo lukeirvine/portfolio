@@ -7,12 +7,12 @@ const SwipePrompt = () => {
       <div className="sp-body">
         <div className="sp-arrows">
           {Array(10).fill(0).map((item, i) => (
-            <i key={i} className="bi-chevron-right sp-moving-chevron" />
+            <i key={i} className="bi-chevron-left sp-moving-chevron" />
           ))}
         </div>
         <div className="sp-text">SWIPE FOR MORE</div>
         <div className="sp-slider">
-          <i className="bi-chevron-right sp-chevron" />
+          <i className="bi-chevron-left sp-chevron" />
         </div>
       </div>
     </div>
