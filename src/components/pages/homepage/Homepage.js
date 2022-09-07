@@ -51,11 +51,11 @@ const Homepage = () => {
     if (isMobile) {
       (async () => {
         await sleep(500);
-        window.scrollTo(0, 20);
+        window.scrollTo(0, 60);
         await sleep(100);
         window.scrollTo(0, 0);
         await sleep(100);
-        window.scrollTo(0, 20);
+        window.scrollTo(0, 60);
         await sleep(100);
         window.scrollTo(0, 0);
       })();
