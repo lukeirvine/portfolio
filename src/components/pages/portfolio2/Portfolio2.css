@@ -25,7 +25,7 @@
   /* border-style: solid; */
   border-color: white;
   /* position: relative; */
-  position: block;
+  position: relative;
   /* background-color: yellow; */
   flex-grow: 1;
 }
