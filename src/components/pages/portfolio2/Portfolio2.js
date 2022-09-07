@@ -6,14 +6,16 @@ import ScrollToTop from '../../scrolling/ScrollToTop';
 import { content } from './Content';
 import SwipeListener from 'swipe-listener';
 import SwipePrompt from './components/SwipePrompt';
+import { sleep } from '../../../resources/functions';
 import "./Portfolio2.css";
 
 const Portfolio2 = () => {
+  const isMobile = window.screen.width < 992;
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     console.log(window.screen.width)
-    if (window.screen.width < 992) {
+    if (isMobile) {
       var page = document.getElementById("p2-page");
       var listener = SwipeListener(page);
       console.log("adding listener");
@@ -52,10 +54,16 @@ const Portfolio2 = () => {
 
   const incrementIndex = () => {
     setIndex(prev => prev < content.length - 1 ? prev + 1 : 0);
+    if (isMobile) {
+      sleep(1300).then(() => window.scrollTo(0, 0));
+    }
   }
 
   const decrementIndex = () => {
     setIndex(prev => prev > 0 ? prev - 1 : content.length - 1);
+    if (isMobile) {
+      sleep(1300).then(() => window.scrollTo(0, 0));
+    }
   }
 
   return <>
