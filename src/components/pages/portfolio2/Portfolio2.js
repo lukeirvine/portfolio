@@ -91,7 +91,6 @@ const Portfolio2 = () => {
               <img
                 className={"p2-img p2-img-" + i.toString()}
                 src={proj.img}
-                style={{backgroundColor: proj.bgColor}}
               />
             </div>
             <div 
