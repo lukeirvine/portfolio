@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Homepage from './components/pages/homepage/Homepage';
 import Homepage2 from './components/pages/homepage2/Homepage2';
@@ -11,16 +11,15 @@ import Error from "./components/pages/error/Error";
 
 const App = () => {
   return (
-    <HashRouter>
-          <Switch>
-              <Route path="/" component={Homepage} exact/>
-              <Route path="/apps" component={Portfolio2} exact/>
-              <Route path="/test-port" component={Portfolio2} exact />
-              <Route path="/music" component={Music} exact/>
-              <Route path="/contact" component={Contact} exact/>
-              <Route render={(props) => <Error {...props}/>}/>
-          </Switch>
-    </HashRouter>
+    <BrowserRouter>
+      <Switch>
+          <Route path="/" component={Homepage} exact/>
+          <Route path="/apps" component={Portfolio2} exact/>
+          {/* <Route path="/music" component={Music} exact/> */}
+          <Route path="/contact" component={Contact} exact/>
+          <Route render={(props) => <Error {...props}/>}/>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
