@@ -75,14 +75,61 @@
   font-size: 1rem;
 }
 
-.p2-img {
+.p2-img-wrapper {
   margin-bottom: 10px;
-  object-fit: cover;
   width: 100%;
   max-height: 40vh;
   /* position: absolute; */
   box-shadow: 0px 0px 20px black;
   margin-bottom: 0px;
+}
+
+.p2-img-btn {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 192, 203, 0);
+  border-style: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.p2-img-btn.left {
+  left: 0px;
+  padding-right: 20px;
+}
+
+.p2-img-btn.right {
+  right: 0px;
+  padding-left: 20px;
+}
+
+.p2-img-btn > div {
+  position: relative;
+}
+
+.p2-img-btn .bi-chevron-right,
+.p2-img-btn .bi-chevron-left {
+  text-shadow: 1px 1px 3px black;
+}
+
+.p2-img-btn .bi-chevron-left.bottom,
+.p2-img-btn .bi-chevron-right.bottom {
+  position: absolute;
+  color: rgb(255, 234, 0);
+  top: 3px;
+  left: 1px;
+}
+
+.p2-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.p2-img.hidden {
+  display: none;
 }
 
 .p2-desc {
@@ -135,14 +182,14 @@
   }
 }
 
-.p2-img {
+.p2-img-wrapper {
   /* top: 25%; */
   /* left: 20%; */
   transform-style: preserve-3d;
   animation: 1s ease-in-out 0s imgSlideIn forwards;
 }
 
-.p2-group-hide .p2-img {
+.p2-group-hide .p2-img-wrapper {
   animation: 1s ease-in-out 0s imgSlideOut forwards;
 }
 
@@ -298,16 +345,33 @@
     font-size: 1rem;
   }
   
-  .p2-img {
+  .p2-img-wrapper {
     margin-bottom: 10px;
-    object-fit: cover;
-    width: 100%;
     max-height: 50%;
     border-style: solid;
     /* position: absolute; */
     border-radius: 10px;
     box-shadow: 0px 0px 20px black;
+    overflow: hidden;
   }
+
+  .p2-img-btn .bi-chevron-right,
+  .p2-img-btn .bi-chevron-left {
+    text-shadow: 1px 1px 3px black;
+    font-size: 20px;
+    transition: font-size 0.2s ease-in-out;
+  }
+
+  .p2-img-btn:hover .bi-chevron-right,
+  .p2-img-btn:hover .bi-chevron-left {
+    font-size: 25px;
+  }
+
+  .p2-img-btn:active .bi-chevron-right,
+  .p2-img-btn:active .bi-chevron-left {
+    text-shadow: 0px 0px 0px black;
+  }
+
   
   .p2-desc {
     position: absolute;
@@ -361,14 +425,14 @@
     }
   }
   
-  .p2-img {
+  .p2-img-wrapper {
     /* top: 25%; */
     /* left: 20%; */
     transform-style: preserve-3d;
     animation: 2s ease-in-out 0s imgSlideIn forwards;
   }
   
-  .p2-group-hide .p2-img {
+  .p2-group-hide .p2-img-wrapper {
     animation: 2s ease-in-out 0s imgSlideOut forwards;
   }
   

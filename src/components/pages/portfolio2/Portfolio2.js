@@ -66,6 +66,47 @@ const Portfolio2 = () => {
     }
   }
 
+  const ImageSlider = (props) => {
+    const { proj, i } = props;
+    const [index, setIndex] = useState(0);
+
+    const incrementIndex = () => {
+      setIndex(prev => prev < proj.img.length - 1 ? prev + 1 : 0);
+    }
+
+    const decrementIndex = () => {
+      setIndex(prev => prev > 0 ? prev - 1 : proj.img.length - 1);
+    }
+
+    useEffect(() => {
+      console.log("INDEX", index);
+    }, [index])
+
+    return <>
+      <div className="p2-img-wrapper">
+        {proj.img.length > 1 && <>
+          <button className="p2-img-btn left" onClick={decrementIndex}>
+            <div>
+              <i className="bi-chevron-left" />
+            </div>
+          </button>
+          <button className="p2-img-btn right" onClick={incrementIndex}>
+            <div>
+              <i className="bi-chevron-right" />
+            </div>
+          </button>
+        </>}
+        {proj.img.map((link, j) => (
+          <img
+            key={j}
+            className={"p2-img p2-img-" + i.toString() + (j !== index ? " hidden" : "")}
+            src={link}
+          />
+        ))}
+      </div>
+    </>
+  }
+
   return <>
     <ScrollToTop />
     <div className="p2-page" id="p2-page">
@@ -88,10 +129,7 @@ const Portfolio2 = () => {
                 <h2 className={"p2-subtitle p2-subtitle-" + i.toString()}>{proj.title}</h2>
                 <h3 className="p2-date">{proj.date}</h3>
               </div>
-              <img
-                className={"p2-img p2-img-" + i.toString()}
-                src={proj.img}
-              />
+              <ImageSlider proj={proj} i={i}/>
             </div>
             <div 
               className={"p2-desc p2-desc-" + i.toString()}

@@ -4,7 +4,10 @@ export const content = [
   {
     title: "Camp Mivoden Mobile App",
     date: "Summer 2022",
-    img: imgs.mivodenApp.threeScreens,
+    img: [
+      imgs.mivodenApp.threeScreens,
+      imgs.mivodenApp.mediaEditor
+    ],
     bgColor: 'red',
     pars: [
       <>
@@ -38,7 +41,7 @@ export const content = [
   {
     title: "Wordle Solver",
     date: "March 2022",
-    img: imgs.wordle.desktop,
+    img: [imgs.wordle.desktop],
     bgColor: 'blue',
     pars: [
       <>
@@ -62,7 +65,7 @@ export const content = [
   {
     title: "Midi Display",
     date: "January 2022",
-    img: "https://i.imgur.com/CAMlsFN.png",
+    img: ["https://i.imgur.com/CAMlsFN.png"],
     bgColor: 'yellow',
     pars: [
       <>
@@ -93,7 +96,7 @@ export const content = [
   {
     title: "GoalTop",
     date: "October 2021",
-    img: imgs.goaltop.dashboard,
+    img: [imgs.goaltop.dashboard],
     bgColor: 'pink',
     pars: [
       <>
@@ -115,7 +118,7 @@ export const content = [
   {
     title: "Survey Counter",
     date: "July 2021",
-    img: imgs.surveyCounter.reports,
+    img: [imgs.surveyCounter.reports],
     bgColor: 'pink',
     pars: [
       <>
@@ -142,7 +145,7 @@ export const content = [
   {
     title: "TV Display",
     date: "August 2021",
-    img: imgs.mealDash.dash2,
+    img: [imgs.mealDash.dash2],
     bgColor: 'pink',
     pars: [
       <>
@@ -164,7 +167,7 @@ export const content = [
   {
     title: "Small Groups Website",
     date: "December 2020",
-    img: imgs.smallGroups.groupCards,
+    img: [imgs.smallGroups.groupCards],
     bgColor: 'pink',
     pars: [
       <>
@@ -187,7 +190,7 @@ export const content = [
   {
     title: "Maze",
     date: "February 2020",
-    img: imgs.maze.action,
+    img: [imgs.maze.action],
     bgColor: 'pink',
     pars: [
       <>

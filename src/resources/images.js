@@ -56,7 +56,8 @@ export const imgs = {
         baker: 'https://i.imgur.com/9hZQkUs.jpg'
     },
     mivodenApp: {
-        threeScreens: 'https://i.imgur.com/pWgFS94.png'
+        threeScreens: 'https://i.imgur.com/pWgFS94.png',
+        mediaEditor: "https://i.imgur.com/E2lPpoR.png",
     }
 }
 
