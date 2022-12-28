@@ -6,7 +6,9 @@ export const content = [
     date: "Summer 2022",
     img: [
       imgs.mivodenApp.threeScreens,
-      imgs.mivodenApp.mediaEditor
+      imgs.mivodenApp.mediaEditor,
+      imgs.mivodenApp.scheduleEditor,
+      imgs.mivodenApp.notifications
     ],
     bgColor: 'red',
     pars: [

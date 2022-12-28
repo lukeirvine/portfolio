@@ -58,6 +58,8 @@ export const imgs = {
     mivodenApp: {
         threeScreens: 'https://i.imgur.com/pWgFS94.png',
         mediaEditor: "https://i.imgur.com/E2lPpoR.png",
+        scheduleEditor: "https://i.imgur.com/4G1rtno.png",
+        notifications: "https://i.imgur.com/KGvIEcM.png",
     }
 }
 
