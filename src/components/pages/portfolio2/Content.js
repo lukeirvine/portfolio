@@ -21,16 +21,16 @@ export const content = [
         This app integrates a number of different technologies. It's built in ReactJS using a Firebase database, but 
         uses Cloudflare's R2 storage for audio files because it has no egress fees. It also utilizes a cloud server 
         I set up on a Vultr instance that takes a new audio file from Cloudflare, creates a json file representing 
-        the visualized waveform, and saves that to Cloudflare as well. This allows the app to show waveforms without 
+        the visualized waveform, and saves it back to Cloudflare. This allows the app to show waveforms without 
         processing the audio files on each load. 
       </>,
       <>
-        Mixflip is also integrated with Chargebee using their api and some custom webhooks to seamlessly manage 
+        Mixflip is also integrated with Chargebee using their API and some custom webhooks to seamlessly manage 
         our subscriptions and plans. Half of Mixflip's features are only available with a premium subscription plan.
       </>,
       <>
         This app has been a fun exercise in true full-stack development. There are essentially 3 different servers 
-        running my back-end code: Firebase Cloud Functions running Chargebeen webhooks to keep Mixflip up to date 
+        running my back-end code: Firebase Cloud Functions running Chargebee webhooks to keep Mixflip up to date 
         with what the user is paying for, the Cloudflare R2 worker server to manage my storage's security and organization, 
         and a Vultr virtual machine instance that creates the visualized waveforms. 
       </>,
