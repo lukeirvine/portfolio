@@ -60,6 +60,11 @@ export const imgs = {
         mediaEditor: "https://i.imgur.com/E2lPpoR.png",
         scheduleEditor: "https://i.imgur.com/4G1rtno.png",
         notifications: "https://i.imgur.com/KGvIEcM.png",
+    },
+    mixflip: {
+        dashboard: "https://i.imgur.com/LcPCam9.png",
+        demo1: "https://i.imgur.com/m5fgh7e.png",
+        demo2: "https://i.imgur.com/IN595do.png"
     }
 }
 

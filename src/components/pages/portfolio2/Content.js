@@ -2,6 +2,44 @@ import { imgs } from "../../../resources/images"
 
 export const content = [
   {
+    title: "Mixflip",
+    date: "Winter 2023",
+    img: [
+      imgs.mixflip.dashboard,
+      imgs.mixflip.demo1,
+      imgs.mixflip.demo2
+    ],
+    bgColor: 'yellow',
+    pars: [
+      <>
+        <a target="_blank" href="https://mixflip.io">Mixflip</a> is SaaS project I'm working on with sound producer 
+        and friend, <a target="_blank" href="https://evergreenrecords.com/about/">David Olson</a>. It's 
+        an embeddable audio player that demonstrates an audio engineer's production, mixing, or mastering skills by 
+        swapping between two time-synced files in real time. 
+      </>,
+      <>
+        This app integrates a number of different technologies. It's built in ReactJS using a Firebase database, but 
+        uses Cloudflare's R2 storage for audio files because it has no egress fees. It also utilizes a cloud server 
+        I set up on a Vultr instance that takes a new audio file from Cloudflare, creates a json file representing 
+        the visualized waveform, and saves that to Cloudflare as well. This allows the app to show waveforms without 
+        processing the audio files on each load. 
+      </>,
+      <>
+        Mixflip is also integrated with Chargebee using their api and some custom webhooks to seamlessly manage 
+        our subscriptions and plans. Half of Mixflip's features are only available with a premium subscription plan.
+      </>,
+      <>
+        This app has been a fun exercise in true full-stack development. There are essentially 3 different servers 
+        running my back-end code: Firebase Cloud Functions running Chargebeen webhooks to keep Mixflip up to date 
+        with what the user is paying for, the Cloudflare R2 worker server to manage my storage's security and organization, 
+        and a Vultr virtual machine instance that creates the visualized waveforms. 
+      </>,
+      <>
+        You can try Mixflip for free with a 14-day trail at <a target="_blank" href="https://mixflip.io">mixflip.io</a>.
+      </>
+    ]
+  },
+  {
     title: "Camp Mivoden Mobile App",
     date: "Summer 2022",
     img: [
@@ -13,7 +51,7 @@ export const content = [
     bgColor: 'red',
     pars: [
       <>
-        Camp Mivoden is a Christian summer camp and retreat center in Northern Idaho. I've had the privilege of working there for several 
+        <a target="_blank" href="https://mivoden.com">Camp Mivoden</a> is a Christian summer camp and retreat center in Northern Idaho. I've had the privilege of working there for several 
         summers, so they asked me to create a mobile app that would feature camp media and provide 
         tools for new campers like an interactive map and up-to-date schedules.
       </>,
@@ -34,9 +72,7 @@ export const content = [
         a database, authentication, and cloud functions.
       </>,
       <>
-        This project is still far from finished. There are UX changes to make to both apps, necessaary 
-        features to release, and an Android version to release. You can check out 
-        the Mivoden app on the <a target="_blank" href="https://apps.apple.com/us/app/camp-mivoden/id1628255508">App Store</a>.
+        You can check out the Mivoden app on the <a target="_blank" href="https://apps.apple.com/us/app/camp-mivoden/id1628255508">App Store</a>.
       </>
     ]
   },
@@ -189,24 +225,24 @@ export const content = [
       </>
     ]
   },
-  {
-    title: "Maze",
-    date: "February 2020",
-    img: [imgs.maze.action],
-    bgColor: 'pink',
-    pars: [
-      <>
-        This is the first major computer science project I worked on in college and it was easily the most fun. 
-        Humorously, this was written before I understood basic javascript modules, so all the code is in 
-        a single 'index.html' file. It's massive! Also there are several notable bugs that make me think 
-        back on the early coding days with fondness lol.
-      </>,
-      <>
-        Anyways, maybe one day I'll go back and refactor it for fun. 
-        Until then, you can play it <a target="_blank" href="https://lukeirvine.github.io/maze-with-enemies/">here</a>! 
-        You'll need to wait a little bit for everything to load, and if you want sound, make sure to click 
-        the sound button *before* you choose a level. It will be chaos if you click it after.
-      </>
-    ]
-  }
+  // {
+  //   title: "Maze",
+  //   date: "February 2020",
+  //   img: [imgs.maze.action],
+  //   bgColor: 'pink',
+  //   pars: [
+  //     <>
+  //       This is the first major computer science project I worked on in college and it was easily the most fun. 
+  //       Humorously, this was written before I understood basic javascript modules, so all the code is in 
+  //       a single 'index.html' file. It's massive! Also there are several notable bugs that make me think 
+  //       back on the early coding days with fondness lol.
+  //     </>,
+  //     <>
+  //       Anyways, maybe one day I'll go back and refactor it for fun. 
+  //       Until then, you can play it <a target="_blank" href="https://lukeirvine.github.io/maze-with-enemies/">here</a>! 
+  //       You'll need to wait a little bit for everything to load, and if you want sound, make sure to click 
+  //       the sound button *before* you choose a level. It will be chaos if you click it after.
+  //     </>
+  //   ]
+  // }
 ]
