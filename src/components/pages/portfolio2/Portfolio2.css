@@ -14,7 +14,7 @@
   color: white;
   font-size: 50px;
   letter-spacing: 5px;
-  text-shadow: 3px 3px 0px rgba(0, 255, 255, 0.602);
+  text-shadow: 3px 3px 0px #00ffff9a;
   padding-left: 15px;
   padding-top: 10px;
   /* background-color: purple; */
@@ -165,8 +165,7 @@
 .p2-subtitle {
   /* left: 20%; */
   /* top: 14%; */
-  text-shadow: -3px -3px 0px rgba(0, 255, 195, 0.602);
-  text-shadow: 3px 3px 0px rgba(230, 0, 255, 0.602);
+  text-shadow: 3px 3px 0px #00ffff9a;
   /* transition: transform 1s ease-in-out; */
 }
 
@@ -408,8 +407,6 @@
   .p2-subtitle {
     /* left: 20%; */
     /* top: 14%; */
-    text-shadow: -3px -3px 0px rgba(0, 255, 195, 0.602);
-    text-shadow: 3px 3px 0px rgba(230, 0, 255, 0.602);
     /* transition: transform 1s ease-in-out; */
   }
   
